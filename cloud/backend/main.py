@@ -268,6 +268,7 @@ async def add_face():
         'user_id':       user_id,
         'name':          name,
         'image_path':    image_path,
+        
         'encoding_data': pickle.dumps(embedding),
         'added_at':      datetime.datetime.now(),
         'is_active':     True,

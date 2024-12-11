@@ -1475,3 +1475,11 @@ Speed: 8.0ms pre-process, 491.8ms inference, 1.0ms NMS per image at shape (1, 3,
 2024-12-11 17:46:08,375 - INFO - Completed index
 2024-12-11 17:49:00,242 - INFO - Starting index
 2024-12-11 17:49:00,243 - INFO - Completed index
+2024-12-11 21:41:57,235 - INFO - Started the project
+2024-12-11 21:41:57,240 - INFO - Started preprocessing features
+2024-12-11 21:41:57,242 - INFO - Loading the model...
+2024-12-11 21:42:11,315 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 21:44:27,592 - INFO - Started the project
+2024-12-11 21:44:27,595 - INFO - Started preprocessing features
+2024-12-11 21:44:27,596 - INFO - Loading the model...
+2024-12-11 21:44:33,141 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)

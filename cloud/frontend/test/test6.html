@@ -1,0 +1,43 @@
+<!-- Main Section -->
+<div class="section" id="main-section">
+    <header>Smart DOOR Bell</header>
+    <div class="sidebar" onclick="navigateTo('info-section')">
+        <img src="https://via.placeholder.com/40" alt="Sign">
+    </div>
+</div>
+
+<!-- Info Section -->
+<div class="section" id="info-section">
+    <div class="info-container">
+        <h2>Residents</h2>
+        <div class="info-item" onclick="alert('Sabina')">Sabina <span>👤</span></div>
+        <div class="info-item" onclick="alert('Ilaha')">Ilaha <span>👤</span></div>
+        <div class="info-item" onclick="alert('Murad')">Murad <span>👤</span></div>
+        <div class="info-item" onclick="alert('Azadkhan')">Azadkhan <span>👤</span></div>
+        <div class="info-item" onclick="alert('Movlanverdi')">Movlanverdi <span>👤</span></div>
+        <div class="info-item" onclick="alert('Ramiz')">Ramiz <span>👤</span></div>
+
+        <h2>Emergency Contacts</h2>
+        <div class="info-item" onclick="alert('Emergency Contact 1: 123-456-7890')">Emergency Contact 1 <span>📞</span></div>
+        <div class="info-item" onclick="alert('Emergency Contact 2: 987-654-3210')">Emergency Contact 2 <span>📞</span></div>
+    </div>
+</div>
+
+<script>
+    // Function to switch between sections
+    function navigateTo(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'flex';
+    }
+
+    // Show welcome section on load
+    document.getElementById('welcome-section').style.display = 'flex';
+</script>
+
+</body>
+</html>

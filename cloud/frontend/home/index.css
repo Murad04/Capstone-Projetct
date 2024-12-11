@@ -1,0 +1,116 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Landing Page Styling */
+.landing {
+    text-align: center;
+    background-color: black;
+}
+
+.landing h1 {
+    font-size: 2.5em;
+    color: #234F1E;
+    margin-bottom: 20px;
+}
+
+.landing button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #234F1E;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.landing button:hover {
+    background-color: #98BF64;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: #234F1E;
+    padding: 1em 0;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+nav button {
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 1em;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: #98BF64;
+}
+
+/* Section Content Styling */
+.section-content {
+    display: none;
+    background-color: #234F1E;
+    padding: 2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#my-page {
+    background-color: #234F1E;
+}
+
+#news {
+    background-color: #033A06;
+}
+
+#contact {
+    background-color: #98BF64;
+}
+
+button {
+    background-color: #779468;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #234F1E;
+    color: #ffffff;
+}

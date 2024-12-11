@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Door Bell</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            display: none;
+            height: 100vh;
+            width: 100%;
+        }
+        .welcome-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        .welcome {
+            font-size: 48px;
+            cursor: pointer;
+        }
+        .login-section {
+            background: linear-gradient(to bottom, black, grey, white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .main-section {
+            margin: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .sidebar {
+            width: 50px;
+            height: 100vh;
+            background-color: grey;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .sidebar img {
+            width: 30px;
+        }
+        .info-section {
+            margin: 20px;
+        }
+        .info-item {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <div class="section welcome-section" id="welcome-section">
+        <div class="welcome" onclick="navigateTo('login-section')">Welcome</div>
+    </div>
+
+    <!-- Login Section -->
+    <div class="section login-section" id="login-section">
+        <div class="login-container">
+            <h2>Login or Sign In</h2>
+            <button onclick="navigateTo('main-section')">Log In</button>
+            <button onclick="navigateTo('main-section')">Sign In</button>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="section main-section" id="main-section">
+        <header>Smart DOOR Bell</header>
+        <div class="sidebar" onclick="navigateTo('info-section')">
+            <img src="sign-icon.png" alt="Sign">
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="section info-section" id="info-section">
+        <h1>Information</h1>
+        <div>
+            <h2>Residents</h2>
+            <div class="info-item" onclick="alert('Sabina')">Sabina</div>
+            <div class="info-item" onclick="alert('Ilaha')">Ilaha</div>
+            <div class="info-item" onclick="alert('Murad')">Murad</div>
+            <div class="info-item" onclick="alert('Azadkhan')">Azadkhan</div>
+            <div class="info-item" onclick="alert('Movlanverdi')">Movlanverdi</div>
+            <div class="info-item" onclick="alert('Ramiz')">Ramiz</div>
+        </div>
+        <div>
+            <h2>Emergency Contacts</h2>
+            <div class="info-item" onclick="alert('Emergency Contact 1')">Emergency Contact 1</div>
+            <div class="info-item" onclick="alert('Emergency Contact 2')">Emergency Contact 2</div>
+        </div>
+    </div>
+
+    <script>
+        // Function to navigate between sections
+        function navigateTo(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            // Show the selected section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'flex';
+            }
+        }
+
+        // Show the welcome section by default
+        document.getElementById('welcome-section').style.display = 'flex';
+    </script>
+</body>
+</html>

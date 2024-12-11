@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .form-container label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .form-container input,
+        .form-container select,
+        .form-container button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background: #0056b3;
+        }
+        .message {
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .message.success {
+            color: green;
+        }
+        .message.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add User</h1>
+        <form id="addUserForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit">Add User</button>
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+     document.getElementById('addUserForm').addEventListener('submit', async function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form data
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const role = document.getElementById('role').value;
+
+    // Prepare the request payload
+    const payload = { username, email, password, role };
+
+    try {
+        // Send a POST request to the /add_user endpoint
+        const response = await fetch('https://project-capstone-89st.onrender.com/add_user', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        });
+
+        // Parse the response
+        console.log('Server response:', result); // Debugging
+
+        // Handle response
+        const messageElement = document.getElementById('message');
+        if (response.status==201) {
+            messageElement.textContent = result.message;
+            messageElement.className = 'message success';
+        } else {
+            messageElement.textContent = result.error || 'Failed to add user.';
+            messageElement.className = 'message error';
+        }
+    } catch (error) {
+        // Handle network or other errors
+        const messageElement = document.getElementById('message');
+        messageElement.textContent = error;
+        messageElement.className = 'message error';
+        console.log('Error:', error);
+    }
+});
+
+    </script>
+</body>
+</html>

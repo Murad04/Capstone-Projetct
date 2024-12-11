@@ -1,0 +1,43 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Door Bell</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .sidebar {
+            width: 50px;
+            height: 100vh;
+            background-color: grey;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .sidebar img {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>Smart DOOR Bell</header>
+    <div class="sidebar" onclick="window.location.href='info.html'">
+        <img src="sign-icon.png" alt="Sign">
+    </div>
+</body>
+</html>

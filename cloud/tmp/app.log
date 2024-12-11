@@ -1,0 +1,1477 @@
+2024-12-11 16:08:22,823 - INFO - Started the project
+2024-12-11 16:08:22,827 - INFO - Started preprocessing features
+2024-12-11 16:08:22,827 - INFO - Loading the model...
+2024-12-11 16:08:27,236 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:08:30,654 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 11.0ms pre-process, 294.5ms inference, 2.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:08:31,119 - INFO - Starting send_notification
+2024-12-11 16:08:31,352 - INFO - Starting wait_for_response
+2024-12-11 16:08:41,967 - INFO - Received 'yes' response!
+2024-12-11 16:08:41,969 - INFO - Completed wait_for_response
+2024-12-11 16:08:41,969 - INFO - Starting store_notifications
+2024-12-11 16:08:41,969 - INFO - Starting get_connection
+2024-12-11 16:08:46,131 - INFO - Completed get_connection
+2024-12-11 16:08:46,153 - ERROR - Failed to send notification: ('23000', '[23000] [Microsoft][ODBC SQL Server Driver][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Notificat__user___35BCFE0A". The conflict occurred in database "capstonedesign_DB", table "dbo.Users", column \'user_id\'. (547) (SQLExecDirectW); [23000] [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has been terminated. (3621)')
+2024-12-11 16:08:46,153 - INFO - Completed send_notification
+2024-12-11 16:08:46,160 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 16:08:46,163 - ERROR - Failed to send notification: 500
+2024-12-11 16:10:15,122 - INFO - Started the project
+2024-12-11 16:10:15,125 - INFO - Started preprocessing features
+2024-12-11 16:10:15,126 - INFO - Loading the model...
+2024-12-11 16:10:19,648 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:10:20,626 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 17.0ms pre-process, 300.2ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:10:21,401 - INFO - Starting send_notification
+2024-12-11 16:10:21,633 - INFO - Starting wait_for_response
+2024-12-11 16:12:26,329 - INFO - Timeout reached. No response received.
+2024-12-11 16:12:26,329 - INFO - Completed wait_for_response
+2024-12-11 16:12:26,329 - INFO - Starting store_notifications
+2024-12-11 16:12:26,330 - INFO - Starting get_connection
+2024-12-11 16:12:26,358 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 174, in recognize
+    notify_response = await client.post(f"{main_url}/send_notification", json=notification_payload)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+2024-12-11 16:13:11,730 - INFO - Started the project
+2024-12-11 16:13:11,734 - INFO - Started preprocessing features
+2024-12-11 16:13:11,735 - INFO - Loading the model...
+2024-12-11 16:13:16,618 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:13:28,678 - INFO - Starting index
+2024-12-11 16:13:28,683 - INFO - Completed index
+2024-12-11 16:13:36,351 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 10.0ms pre-process, 292.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:13:37,046 - INFO - Starting send_notification
+2024-12-11 16:13:37,279 - INFO - Starting wait_for_response
+2024-12-11 16:13:47,910 - INFO - Received 'yes' response!
+2024-12-11 16:13:47,910 - INFO - Completed wait_for_response
+2024-12-11 16:13:47,911 - INFO - Starting store_notifications
+2024-12-11 16:13:47,911 - INFO - Starting get_connection
+2024-12-11 16:13:52,107 - INFO - Completed get_connection
+2024-12-11 16:13:52,170 - ERROR - Error in send notification endpoint: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 291, in send_notification
+    await b_DB.store_notifications(user_id, log_id, notification_type, sent_at)
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\backend_db_operations.py", line 215, in store_notifications
+    await cursor.execute(sql, (user_id, log_id, notification_type, sent_at))
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aioodbc\cursor.py", line 132, in execute
+    await self._run_operation(self._impl.execute, sql, *params)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aioodbc\cursor.py", line 30, in _run_operation
+    result = await self._conn._execute(func, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC SQL Server Driver][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Notificat__user___35BCFE0A". The conflict occurred in database "capstonedesign_DB", table "dbo.Users", column \'user_id\'. (547) (SQLExecDirectW); [23000] [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has been terminated. (3621)')
+
+2024-12-11 16:13:52,170 - INFO - Completed send_notification
+2024-12-11 16:13:52,180 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 16:13:52,185 - ERROR - Failed to send notification: 500
+2024-12-11 16:20:06,959 - INFO - Started the project
+2024-12-11 16:20:06,962 - INFO - Started preprocessing features
+2024-12-11 16:20:06,963 - INFO - Loading the model...
+2024-12-11 16:20:11,378 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:20:16,671 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 6.0ms pre-process, 431.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:20:17,317 - INFO - Starting send_notification
+2024-12-11 16:20:17,559 - INFO - Starting wait_for_response
+2024-12-11 16:20:28,285 - INFO - Received 'yes' response!
+2024-12-11 16:20:28,285 - INFO - Completed wait_for_response
+2024-12-11 16:20:28,285 - INFO - Starting store_notifications
+2024-12-11 16:20:28,288 - ERROR - Error in send notification endpoint: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 291, in send_notification
+    await b_DB.store_notifications(user_id, log_id, notification_type, sent_at)
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^
+TypeError: store_notifications() takes 2 positional arguments but 4 were given
+
+2024-12-11 16:20:28,289 - INFO - Completed send_notification
+2024-12-11 16:20:28,297 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 16:20:28,304 - ERROR - Failed to send notification: 500
+2024-12-11 16:21:01,468 - INFO - Started the project
+2024-12-11 16:21:01,471 - INFO - Started preprocessing features
+2024-12-11 16:21:01,472 - INFO - Loading the model...
+2024-12-11 16:21:06,483 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:21:06,924 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 4.0ms pre-process, 300.0ms inference, 0.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:21:07,621 - INFO - Starting send_notification
+2024-12-11 16:21:07,848 - INFO - Starting wait_for_response
+2024-12-11 16:21:13,268 - INFO - Received 'yes' response!
+2024-12-11 16:21:13,268 - INFO - Completed wait_for_response
+2024-12-11 16:21:13,268 - INFO - Starting store_notifications
+2024-12-11 16:21:13,268 - INFO - Starting get_connection
+2024-12-11 16:21:17,432 - INFO - Completed get_connection
+2024-12-11 16:21:17,456 - INFO - Completed store_notifications
+2024-12-11 16:21:17,457 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 16:21:17,457 - INFO - Granted by user
+2024-12-11 16:21:17,458 - INFO - Completed send_notification
+2024-12-11 16:21:17,458 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1443, in full_dispatch_request
+    return await self.finalize_request(result, request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1567, in finalize_request
+    response = await self.make_response(result)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1389, in make_response
+    raise TypeError(f"The response value type ({type(value).__name__}) is not valid")
+TypeError: The response value type (bool) is not valid
+2024-12-11 16:21:17,472 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 16:21:17,479 - ERROR - Failed to send notification: 500
+2024-12-11 16:25:45,031 - INFO - Started the project
+2024-12-11 16:25:45,035 - INFO - Started preprocessing features
+2024-12-11 16:25:45,036 - INFO - Loading the model...
+2024-12-11 16:25:49,696 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:25:54,994 - INFO - Starting index
+2024-12-11 16:25:54,999 - INFO - Completed index
+2024-12-11 16:26:00,073 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 285.2ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:26:00,561 - INFO - Starting send_notification
+2024-12-11 16:26:00,799 - INFO - Starting wait_for_response
+2024-12-11 16:26:11,752 - INFO - Received 'yes' response!
+2024-12-11 16:26:11,752 - INFO - Completed wait_for_response
+2024-12-11 16:26:11,753 - INFO - Starting store_notifications
+2024-12-11 16:26:11,753 - INFO - Starting get_connection
+2024-12-11 16:26:15,923 - INFO - Completed get_connection
+2024-12-11 16:26:15,936 - INFO - Completed store_notifications
+2024-12-11 16:26:15,936 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 16:26:15,936 - INFO - Granted by user
+2024-12-11 16:26:15,937 - INFO - Completed send_notification
+2024-12-11 16:26:15,937 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1443, in full_dispatch_request
+    return await self.finalize_request(result, request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1567, in finalize_request
+    response = await self.make_response(result)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1389, in make_response
+    raise TypeError(f"The response value type ({type(value).__name__}) is not valid")
+TypeError: The response value type (bool) is not valid
+2024-12-11 16:26:15,945 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 16:26:15,947 - ERROR - Failed to send notification: 500
+2024-12-11 16:27:34,690 - INFO - Started the project
+2024-12-11 16:27:34,692 - INFO - Started preprocessing features
+2024-12-11 16:27:34,693 - INFO - Loading the model...
+2024-12-11 16:27:39,343 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:27:42,459 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 5.0ms pre-process, 273.8ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:27:42,929 - INFO - Starting send_notification
+2024-12-11 16:27:43,159 - INFO - Starting wait_for_response
+2024-12-11 16:27:48,572 - INFO - Received 'yes' response!
+2024-12-11 16:27:48,572 - INFO - Completed wait_for_response
+2024-12-11 16:27:48,573 - INFO - Starting store_notifications
+2024-12-11 16:27:48,573 - INFO - Starting get_connection
+2024-12-11 16:27:52,810 - INFO - Completed get_connection
+2024-12-11 16:27:52,838 - INFO - Completed store_notifications
+2024-12-11 16:27:52,839 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 16:27:52,840 - INFO - Granted by user
+2024-12-11 16:27:52,840 - INFO - Completed send_notification
+2024-12-11 16:27:52,853 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 16:27:52,862 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 176, in recognize
+    response_data = notify_response.json()
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_models.py", line 766, in json
+    return jsonlib.loads(self.content, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2024-12-11 16:30:16,459 - INFO - Started the project
+2024-12-11 16:30:16,462 - INFO - Started preprocessing features
+2024-12-11 16:30:16,463 - INFO - Loading the model...
+2024-12-11 16:30:20,767 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:30:23,571 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 8.0ms pre-process, 274.0ms inference, 2.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:30:24,188 - INFO - Starting send_notification
+2024-12-11 16:30:24,453 - INFO - Starting wait_for_response
+2024-12-11 16:30:29,877 - INFO - Received 'yes' response!
+2024-12-11 16:30:29,877 - INFO - Completed wait_for_response
+2024-12-11 16:30:29,877 - INFO - Starting store_notifications
+2024-12-11 16:30:29,877 - INFO - Starting get_connection
+2024-12-11 16:30:34,062 - INFO - Completed get_connection
+2024-12-11 16:30:34,081 - INFO - Completed store_notifications
+2024-12-11 16:30:34,081 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 16:30:34,081 - INFO - Granted by user
+2024-12-11 16:30:34,081 - INFO - Completed send_notification
+2024-12-11 16:30:34,086 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 16:30:34,088 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 177, in recognize
+    if notify_response.content.get("result") == "granted":
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'get'
+
+2024-12-11 16:32:45,975 - INFO - Started the project
+2024-12-11 16:32:45,978 - INFO - Started preprocessing features
+2024-12-11 16:32:45,979 - INFO - Loading the model...
+2024-12-11 16:32:50,774 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:32:53,586 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 10.0ms pre-process, 291.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:32:54,293 - INFO - Starting send_notification
+2024-12-11 16:32:54,526 - INFO - Starting wait_for_response
+2024-12-11 16:32:59,939 - INFO - Received 'yes' response!
+2024-12-11 16:32:59,939 - INFO - Completed wait_for_response
+2024-12-11 16:32:59,939 - INFO - Starting store_notifications
+2024-12-11 16:32:59,939 - INFO - Starting get_connection
+2024-12-11 16:33:04,107 - INFO - Completed get_connection
+2024-12-11 16:33:04,118 - INFO - Completed store_notifications
+2024-12-11 16:33:04,118 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 16:33:04,118 - INFO - Granted by user
+2024-12-11 16:33:04,119 - INFO - Completed send_notification
+2024-12-11 16:33:04,121 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 16:33:04,123 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 177, in recognize
+    if notify_response.get("result") == "granted":
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Response' object has no attribute 'get'
+
+2024-12-11 16:34:54,594 - INFO - Started the project
+2024-12-11 16:34:54,597 - INFO - Started preprocessing features
+2024-12-11 16:34:54,598 - INFO - Loading the model...
+2024-12-11 16:34:59,022 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:35:01,377 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 293.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:35:01,899 - INFO - Starting send_notification
+2024-12-11 16:35:02,137 - INFO - Starting wait_for_response
+2024-12-11 16:35:12,747 - INFO - Received 'yes' response!
+2024-12-11 16:35:12,747 - INFO - Completed wait_for_response
+2024-12-11 16:35:12,747 - INFO - Starting store_notifications
+2024-12-11 16:35:12,747 - INFO - Starting get_connection
+2024-12-11 16:35:16,928 - INFO - Completed get_connection
+2024-12-11 16:35:16,952 - INFO - Completed store_notifications
+2024-12-11 16:35:16,952 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 16:35:16,952 - INFO - Granted by user
+2024-12-11 16:35:16,953 - INFO - Completed send_notification
+2024-12-11 16:35:16,960 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 16:35:16,964 - INFO - Access granted by user
+2024-12-11 16:36:25,495 - INFO - Started the project
+2024-12-11 16:36:25,498 - INFO - Started preprocessing features
+2024-12-11 16:36:25,499 - INFO - Loading the model...
+2024-12-11 16:36:30,551 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:36:32,791 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 10.0ms pre-process, 554.6ms inference, 5.0ms NMS per image at shape (1, 3, 448, 640)
+2024-12-11 16:36:32,793 - INFO - Access granted
+2024-12-11 16:50:50,907 - INFO - Started the project
+2024-12-11 16:50:50,911 - INFO - Started preprocessing features
+2024-12-11 16:50:50,912 - INFO - Loading the model...
+2024-12-11 16:50:55,527 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:50:57,499 - ERROR - Error in recognize endpoint: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 139, in recognize
+    file_data = await file.read()
+                ^^^^^^^^^^^^^^^^^
+TypeError: object bytes can't be used in 'await' expression
+
+2024-12-11 16:51:24,443 - INFO - Started the project
+2024-12-11 16:51:24,446 - INFO - Started preprocessing features
+2024-12-11 16:51:24,447 - INFO - Loading the model...
+2024-12-11 16:51:29,347 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:51:31,222 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 324.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:51:31,840 - INFO - Starting send_notification
+2024-12-11 16:51:31,840 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 290, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 16:51:31,866 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 16:52:10,073 - INFO - Started the project
+2024-12-11 16:52:10,077 - INFO - Started preprocessing features
+2024-12-11 16:52:10,077 - INFO - Loading the model...
+2024-12-11 16:52:14,729 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:52:35,656 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 277.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:52:36,328 - INFO - Starting send_notification
+2024-12-11 16:52:36,328 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 290, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 16:52:36,355 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 16:53:12,383 - INFO - Started the project
+2024-12-11 16:53:12,386 - INFO - Started preprocessing features
+2024-12-11 16:53:12,387 - INFO - Loading the model...
+2024-12-11 16:53:16,664 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:53:19,070 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 6.0ms pre-process, 281.9ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:53:19,757 - INFO - Starting send_notification
+2024-12-11 16:53:19,757 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 290, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 16:53:19,789 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 16:57:48,951 - INFO - Started the project
+2024-12-11 16:57:48,955 - INFO - Started preprocessing features
+2024-12-11 16:57:48,956 - INFO - Loading the model...
+2024-12-11 16:57:53,519 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 16:57:56,183 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 6.0ms pre-process, 295.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 16:57:56,779 - INFO - Starting send_notification
+2024-12-11 16:57:56,779 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 290, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 16:57:56,796 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 17:00:22,787 - INFO - Started the project
+2024-12-11 17:00:22,790 - INFO - Started preprocessing features
+2024-12-11 17:00:22,791 - INFO - Loading the model...
+2024-12-11 17:00:27,589 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:00:29,931 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 18.8ms pre-process, 303.5ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:00:30,520 - INFO - Starting send_notification
+2024-12-11 17:00:30,520 - INFO - data reeceied in notify: None
+2024-12-11 17:00:30,520 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 291, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 17:00:30,549 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 17:01:55,111 - INFO - Started the project
+2024-12-11 17:01:55,115 - INFO - Started preprocessing features
+2024-12-11 17:01:55,115 - INFO - Loading the model...
+2024-12-11 17:02:00,146 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:02:02,780 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 5.0ms pre-process, 263.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:02:03,305 - INFO - Starting send_notification
+2024-12-11 17:02:03,305 - INFO - data reeceied in notify: None
+2024-12-11 17:02:03,305 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 291, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 17:02:03,346 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 17:03:52,594 - INFO - Started the project
+2024-12-11 17:03:52,598 - INFO - Started preprocessing features
+2024-12-11 17:03:52,599 - INFO - Loading the model...
+2024-12-11 17:03:58,214 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:04:12,419 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 9.0ms pre-process, 329.4ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:04:13,024 - INFO - Starting send_notification
+2024-12-11 17:04:13,088 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 179, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 95, in handle_async_request
+    await self._send_request_body(**kwargs)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 164, in _send_request_body
+    async for chunk in request.stream:
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_multipart.py", line 268, in __aiter__
+    for chunk in self.iter_chunks():
+                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_multipart.py", line 230, in iter_chunks
+    yield from field.render()
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_multipart.py", line 190, in render
+    yield from self.render_data()
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_multipart.py", line 183, in render_data
+    chunk = self.file.read(self.CHUNK_SIZE)
+            ^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'read'
+
+2024-12-11 17:05:08,409 - INFO - Started the project
+2024-12-11 17:05:08,412 - INFO - Started preprocessing features
+2024-12-11 17:05:08,413 - INFO - Loading the model...
+2024-12-11 17:05:13,029 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:05:17,592 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 8.0ms pre-process, 320.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:05:18,323 - INFO - Starting send_notification
+2024-12-11 17:05:18,323 - INFO - data reeceied in notify: None
+2024-12-11 17:05:18,323 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 294, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 17:05:18,350 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 180, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 17:06:33,161 - INFO - Started the project
+2024-12-11 17:06:33,166 - INFO - Started preprocessing features
+2024-12-11 17:06:33,166 - INFO - Loading the model...
+2024-12-11 17:06:37,517 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:06:39,951 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 291.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:06:39,956 - INFO - FIle:<coroutine object _make_delegate_method.<locals>.method at 0x0000026F5B342040>
+2024-12-11 17:06:40,422 - INFO - Starting send_notification
+2024-12-11 17:06:40,422 - INFO - data reeceied in notify: None
+2024-12-11 17:06:40,422 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 295, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 17:06:40,454 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 181, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+2024-12-11 17:10:28,476 - INFO - Started the project
+2024-12-11 17:10:28,480 - INFO - Started preprocessing features
+2024-12-11 17:10:28,480 - INFO - Loading the model...
+2024-12-11 17:10:34,051 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:10:35,878 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 5.0ms pre-process, 277.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:10:36,463 - INFO - Starting send_notification
+2024-12-11 17:10:36,463 - INFO - data reeceied in notify: None
+2024-12-11 17:10:36,464 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 289, in send_notification
+    title =                 data.get('title')
+                            ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-12-11 17:10:36,469 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 17:10:36,471 - INFO - Notification Response Status: 500
+2024-12-11 17:10:36,471 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-11 17:10:36,471 - ERROR - Failed to send notification: 500
+2024-12-11 17:12:46,833 - INFO - Started the project
+2024-12-11 17:12:46,837 - INFO - Started preprocessing features
+2024-12-11 17:12:46,838 - INFO - Loading the model...
+2024-12-11 17:12:50,943 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:12:52,867 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 291.1ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:12:53,484 - INFO - Starting send_notification
+2024-12-11 17:12:53,486 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'temp_image.jpg')])
+2024-12-11 17:12:53,488 - ERROR - Error in send notification endpoint: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 299, in send_notification
+    pb.push_file('temp_image.jpg',file_path)
+TypeError: Pushbullet.push_file() missing 1 required positional argument: 'file_type'
+
+2024-12-11 17:12:53,488 - INFO - Completed send_notification
+2024-12-11 17:12:53,496 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 500 "
+2024-12-11 17:12:53,503 - INFO - Notification Response Status: 500
+2024-12-11 17:12:53,503 - INFO - Notification Response Body: {"error":"Pushbullet.push_file() missing 1 required positional argument: 'file_type'","traceback":"Traceback (most recent call last):\n  File \"D:\\Personal\\codes\\project capstone\\cloud\\backend\\main.py\", line 299, in send_notification\n    pb.push_file('temp_image.jpg',file_path)\nTypeError: Pushbullet.push_file() missing 1 required positional argument: 'file_type'\n"}
+
+2024-12-11 17:12:53,504 - ERROR - Failed to send notification: 500
+2024-12-11 17:16:09,389 - INFO - Started the project
+2024-12-11 17:16:09,392 - INFO - Started preprocessing features
+2024-12-11 17:16:09,393 - INFO - Loading the model...
+2024-12-11 17:16:14,673 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:16:15,634 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 7.0ms pre-process, 306.9ms inference, 1.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:16:16,106 - INFO - Starting send_notification
+2024-12-11 17:16:16,106 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 17:16:18,763 - INFO - Starting wait_for_response
+2024-12-11 17:16:39,830 - INFO - Received 'yes' response!
+2024-12-11 17:16:39,831 - INFO - Completed wait_for_response
+2024-12-11 17:16:39,831 - INFO - Starting store_notifications
+2024-12-11 17:16:39,831 - INFO - Starting get_connection
+2024-12-11 17:16:39,855 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 176, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+2024-12-11 17:17:21,319 - INFO - Started the project
+2024-12-11 17:17:21,322 - INFO - Started preprocessing features
+2024-12-11 17:17:21,323 - INFO - Loading the model...
+2024-12-11 17:17:25,795 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:17:26,999 - INFO - Detections: image 1/1: 1308x736 (no detections)
+Speed: 4.0ms pre-process, 289.0ms inference, 0.0ms NMS per image at shape (1, 3, 640, 384)
+2024-12-11 17:17:27,485 - INFO - Starting send_notification
+2024-12-11 17:17:27,486 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 17:17:30,156 - INFO - Starting wait_for_response
+2024-12-11 17:17:40,767 - INFO - Received 'yes' response!
+2024-12-11 17:17:40,767 - INFO - Completed wait_for_response
+2024-12-11 17:17:40,767 - INFO - Starting store_notifications
+2024-12-11 17:17:40,768 - INFO - Starting get_connection
+2024-12-11 17:17:44,954 - INFO - Completed get_connection
+2024-12-11 17:17:44,971 - INFO - Completed store_notifications
+2024-12-11 17:17:44,972 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 17:17:44,972 - INFO - Granted by user
+2024-12-11 17:17:44,972 - INFO - Completed send_notification
+2024-12-11 17:17:44,977 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 17:17:44,979 - INFO - Notification Response Status: 200
+2024-12-11 17:17:44,979 - INFO - Notification Response Body: {"result":"granted"}
+
+2024-12-11 17:17:44,979 - INFO - Access granted by user
+2024-12-11 17:22:29,925 - INFO - Started the project
+2024-12-11 17:22:29,927 - INFO - Started preprocessing features
+2024-12-11 17:22:29,928 - INFO - Loading the model...
+2024-12-11 17:22:35,500 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:22:43,297 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 10.0ms pre-process, 323.5ms inference, 8.6ms NMS per image at shape (1, 3, 448, 640)
+2024-12-11 17:22:43,299 - INFO - Access granted
+2024-12-11 17:23:36,261 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 7.0ms pre-process, 289.0ms inference, 2.0ms NMS per image at shape (1, 3, 448, 640)
+2024-12-11 17:23:36,262 - INFO - Access granted
+2024-12-11 17:24:44,718 - INFO - Detections: image 1/1: 720x1280 (no detections)
+Speed: 10.0ms pre-process, 310.0ms inference, 1.0ms NMS per image at shape (1, 3, 384, 640)
+2024-12-11 17:24:45,275 - INFO - Starting send_notification
+2024-12-11 17:24:45,276 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 17:24:48,162 - INFO - Starting wait_for_response
+2024-12-11 17:25:09,341 - INFO - Received 'yes' response!
+2024-12-11 17:25:09,342 - INFO - Completed wait_for_response
+2024-12-11 17:25:09,342 - INFO - Starting store_notifications
+2024-12-11 17:25:09,342 - INFO - Starting get_connection
+2024-12-11 17:25:13,542 - INFO - Completed get_connection
+2024-12-11 17:25:13,555 - INFO - Completed store_notifications
+2024-12-11 17:25:13,556 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 17:25:13,556 - INFO - Granted by user
+2024-12-11 17:25:13,556 - INFO - Completed send_notification
+2024-12-11 17:25:13,561 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 17:25:13,562 - INFO - Notification Response Status: 200
+2024-12-11 17:25:13,562 - INFO - Notification Response Body: {"result":"granted"}
+
+2024-12-11 17:25:13,563 - INFO - Access granted by user
+2024-12-11 17:28:52,704 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 12.0ms pre-process, 440.7ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 17:28:53,217 - INFO - Starting send_notification
+2024-12-11 17:28:53,218 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 17:28:56,031 - INFO - Starting wait_for_response
+2024-12-11 17:31:00,872 - INFO - Timeout reached. No response received.
+2024-12-11 17:31:00,872 - INFO - Completed wait_for_response
+2024-12-11 17:31:00,872 - INFO - Starting store_notifications
+2024-12-11 17:31:00,872 - INFO - Starting get_connection
+2024-12-11 17:31:00,885 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 143, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 113, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 186, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\http11.py", line 224, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 176, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout
+
+2024-12-11 17:31:47,918 - INFO - Started the project
+2024-12-11 17:31:47,922 - INFO - Started preprocessing features
+2024-12-11 17:31:47,922 - INFO - Loading the model...
+2024-12-11 17:31:53,001 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:31:57,531 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 8.0ms pre-process, 491.8ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 17:31:57,979 - INFO - Starting send_notification
+2024-12-11 17:31:57,979 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 17:32:00,620 - INFO - Starting wait_for_response
+2024-12-11 17:32:00,832 - INFO - Completed wait_for_response
+2024-12-11 17:32:00,832 - INFO - Starting store_notifications
+2024-12-11 17:32:00,833 - INFO - Starting get_connection
+2024-12-11 17:32:05,034 - INFO - Completed get_connection
+2024-12-11 17:32:05,040 - INFO - Completed store_notifications
+2024-12-11 17:32:05,041 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 17:32:05,041 - INFO - Denied by user
+2024-12-11 17:32:05,041 - INFO - Completed send_notification
+2024-12-11 17:32:05,047 - INFO - HTTP Request: POST http://192.168.45.105:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 17:32:05,048 - INFO - Notification Response Status: 200
+2024-12-11 17:32:05,048 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 17:32:05,049 - INFO - Access denied by user
+2024-12-11 17:39:51,716 - INFO - Started the project
+2024-12-11 17:39:51,719 - INFO - Started preprocessing features
+2024-12-11 17:39:51,720 - INFO - Loading the model...
+2024-12-11 17:39:55,584 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 17:46:08,366 - INFO - Starting index
+2024-12-11 17:46:08,375 - INFO - Completed index
+2024-12-11 17:49:00,242 - INFO - Starting index
+2024-12-11 17:49:00,243 - INFO - Completed index

@@ -1,0 +1,45 @@
+<!-- info.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .info-section {
+            margin-bottom: 20px;
+        }
+        .emergency, .person {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information</h1>
+    <div class="info-section">
+        <h2>Residents</h2>
+        <div class="person" onclick="alert('Sabina')">Sabina</div>
+        <div class="person" onclick="alert('Ilaha')">Ilaha</div>
+        <div class="person" onclick="alert('Murad')">Murad</div>
+        <div class="person" onclick="alert('Azadkhan')">Azadkhan</div>
+        <div class="person" onclick="alert('Movlanverdi')">Movlanverdi</div>
+        <div class="person" onclick="alert('Ramiz')">Ramiz</div>
+    </div>
+    <div class="info-section">
+        <h2>Emergency Contacts</h2>
+        <div class="emergency" onclick="alert('Emergency Contact 1')">Emergency Contact 1</div>
+        <div class="emergency" onclick="alert('Emergency Contact 2')">Emergency Contact 2</div>
+    </div>
+</body>
+</html>

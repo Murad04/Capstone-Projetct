@@ -115,20 +115,7 @@ async def get_all_visitor_logs_with_usernames():
                 return result
     except Exception as e:
         return None
-
-@log_function
 async def get_custom_data_from_custom_table(table: str, columns: list, conditions: dict = None):
-    """
-    Fetches custom data from a specified table with optional conditions.
-
-    Args:
-        table (str): The table name.
-        columns (list): List of column names to select.
-        conditions (dict, optional): Filter conditions in column-value pairs.
-
-    Returns:
-        list: Rows matching the query.
-    """
     column_list = ', '.join(columns)
     sql = f"SELECT {column_list} FROM {table}"
     values = ()
@@ -142,7 +129,8 @@ async def get_custom_data_from_custom_table(table: str, columns: list, condition
             async with conn.cursor() as cursor:
                 await cursor.execute(sql, values)
                 rows = await cursor.fetchall()
-                return rows
+                # Manually map rows to dictionaries
+                return [dict(zip(columns, row)) for row in rows]
     except Exception as ex:
         print(f"Error querying table {table}: {ex}")
         return None

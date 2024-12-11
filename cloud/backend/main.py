@@ -66,6 +66,7 @@ async def wait_for_response():
             return 'not granted'
         
         # Fetch the latest pushes
+        time.sleep(5)
         pushes = pb.get_pushes(limit=1)  # Limit to last 10 pushes to reduce load
         for push in pushes:
             # Check if the push contains the text "yes"
@@ -74,10 +75,6 @@ async def wait_for_response():
                 return 'granted'
             else:
                 return 'not granted'
-
-        # Add a short delay to avoid spamming the API
-        time.sleep(5)
-
 
 # Save the known faces database to a file
 @log_function
@@ -107,7 +104,6 @@ async def index():
     except Exception as ex:
         logging.error(f'Error: {ex}')
 
-# Endpoint to fetch usernames from the database
 @app.route('/get_names', methods=['GET'])
 @log_function
 async def get_names():
@@ -115,8 +111,8 @@ async def get_names():
     columns_to_fetch = ['username']
     try:
         names = await b_DB.get_custom_data_from_custom_table(table_name, columns_to_fetch)
-        result = [dict(row) for row in names]
-        return jsonify({"names": result})
+        # No need for conversion if rows are already dictionaries
+        return jsonify({"names": names})
     except Exception as ex:
         logging.error(f"Error at get_names: {ex}")
         return jsonify({"error": "Failed to fetch the data"}), 500
@@ -166,7 +162,7 @@ async def recognize():
             return jsonify({'result': 'granted'})
 
         # If no detections, send notification
-        main_url = 'http://192.168.45.105:5000'
+        main_url = 'http://192.168.45.249:5000'
         notification_payload = {
             "title": "Face Recognition Alert",
             "message": "No face detected. Do you want to grant access?",

@@ -4,7 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Life</title>
-    <link rel="stylesheet" href="/cloud/frontend/home/index.css">
+
+    <!-- Embedded CSS -->
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Landing Page Styling */
+        .landing {
+            text-align: center;
+            background-color: black;
+        }
+
+        .landing h1 {
+            font-size: 2.5em;
+            color: #234F1E;
+            margin-bottom: 20px;
+        }
+
+        .landing button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #234F1E;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .landing button:hover {
+            background-color: #98BF64;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            display: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        header {
+            background-color: #234F1E;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2em;
+        }
+
+        nav button {
+            background: none;
+            color: #ffffff;
+            border: none;
+            font-size: 1em;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            color: #98BF64;
+        }
+
+        /* Section Content Styling */
+        .section-content {
+            display: none;
+            background-color: #234F1E;
+            padding: 2em;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #my-page {
+            background-color: #234F1E;
+        }
+
+        #news {
+            background-color: #033A06;
+        }
+
+        #contact {
+            background-color: #98BF64;
+        }
+
+        button {
+            background-color: #779468;
+            color: #ffffff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #234F1E;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
 
@@ -32,7 +151,6 @@
             <h3>Who Can Enter This Home</h3>
             <ul id="allowed-faces">
                 <!-- Faces from the backend will be dynamically added here -->
-                 
             </ul>
             <button onclick="closeSection()">Close</button>
         </section>
@@ -77,7 +195,7 @@
     <script>
         async function fetchVisitorLogs(){
             try{
-                const response = await fetch("https://project-capstone-89st.onrender.com/get_user_login_logs");
+                const response = await fetch("https://localhost/get_user_login_logs");
                 if(!response.ok){
                     throw new Error('Failed to fetch visitor logs');
                 }
@@ -113,28 +231,34 @@
 
         fetchVisitorLogs();
 
+       
         async function fetchAllowedFaces() {
             try {
-                const response = await fetch("https://project-capstone-89st.onrender.com/get_names"); // Backend endpoint
+                const response = await fetch("https://localhost/get_names"); // Backend endpoint
+                if (!response.ok) {
+                    throw new Error('Failed to fetch allowed faces');
+                }
+
                 const data = await response.json();
 
                 if (data.names) {
                     const allowedFacesList = document.getElementById("allowed-faces");
                     allowedFacesList.innerHTML = ""; // Clear existing entries
 
-                    // Iterate over the faces and add them to the list
-                    data.names.forEach(name => {
+                    // Iterate over the names array and add usernames to the list
+                    data.names.forEach(entry => {
                         const listItem = document.createElement("li");
-                        listItem.textContent = face.name; // Use the name property
+                        listItem.textContent = entry.username; // Correctly access the username property
                         allowedFacesList.appendChild(listItem);
                     });
                 } else {
-                    console.error("No faces data found");
+                    console.error("No names data found");
                 }
             } catch (error) {
                 console.error("Error fetching allowed faces:", error);
             }
         }
+
 
         function enterSite() {
             document.querySelector(".landing").style.display = "none";

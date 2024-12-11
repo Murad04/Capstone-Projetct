@@ -1483,3 +1483,480 @@ Speed: 8.0ms pre-process, 491.8ms inference, 1.0ms NMS per image at shape (1, 3,
 2024-12-11 21:44:27,595 - INFO - Started preprocessing features
 2024-12-11 21:44:27,596 - INFO - Loading the model...
 2024-12-11 21:44:33,141 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 21:57:22,265 - INFO - Started the project
+2024-12-11 21:57:22,276 - INFO - Started preprocessing features
+2024-12-11 21:57:22,278 - INFO - Loading the model...
+2024-12-11 21:57:34,200 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:00:02,256 - INFO - Started the project
+2024-12-11 22:00:02,258 - INFO - Started preprocessing features
+2024-12-11 22:00:02,259 - INFO - Loading the model...
+2024-12-11 22:00:13,835 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:00:44,161 - INFO - Starting index
+2024-12-11 22:00:44,219 - INFO - Completed index
+2024-12-11 22:02:02,627 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 14.0ms pre-process, 371.4ms inference, 14.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:02:24,405 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 115, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 182, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+2024-12-11 22:02:57,723 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 11.0ms pre-process, 579.2ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:03:19,365 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 115, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 182, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+2024-12-11 22:04:14,247 - INFO - Started the project
+2024-12-11 22:04:14,249 - INFO - Started preprocessing features
+2024-12-11 22:04:14,250 - INFO - Loading the model...
+2024-12-11 22:04:25,137 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:04:33,601 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 6.0ms pre-process, 354.1ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:04:55,169 - ERROR - Error sending notification: Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 216, in handle_async_request
+    raise exc from None
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection_pool.py", line 196, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 99, in handle_async_request
+    raise exc
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 76, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_async\connection.py", line 122, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\auto.py", line 30, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_backends\anyio.py", line 115, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 182, in recognize
+    notify_response = await client.post(
+                      ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1905, in post
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+2024-12-11 22:07:07,753 - INFO - Started the project
+2024-12-11 22:07:07,756 - INFO - Started preprocessing features
+2024-12-11 22:07:07,757 - INFO - Loading the model...
+2024-12-11 22:07:11,532 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:07:14,083 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 7.0ms pre-process, 547.5ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:07:14,630 - INFO - Starting send_notification
+2024-12-11 22:07:14,631 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:07:17,458 - INFO - Starting wait_for_response
+2024-12-11 22:07:17,660 - INFO - Completed wait_for_response
+2024-12-11 22:07:17,660 - INFO - Starting store_notifications
+2024-12-11 22:07:17,660 - INFO - Starting get_connection
+2024-12-11 22:07:21,935 - INFO - Completed get_connection
+2024-12-11 22:07:21,947 - INFO - Completed store_notifications
+2024-12-11 22:07:21,947 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:07:21,947 - INFO - Denied by user
+2024-12-11 22:07:21,947 - INFO - Completed send_notification
+2024-12-11 22:07:21,950 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:07:21,951 - INFO - Notification Response Status: 200
+2024-12-11 22:07:21,951 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:07:21,951 - INFO - Access denied by user
+2024-12-11 22:08:23,043 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 7.0ms pre-process, 321.0ms inference, 0.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:08:23,484 - INFO - Starting send_notification
+2024-12-11 22:08:23,484 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:08:26,051 - INFO - Starting wait_for_response
+2024-12-11 22:08:26,262 - INFO - Completed wait_for_response
+2024-12-11 22:08:26,262 - INFO - Starting store_notifications
+2024-12-11 22:08:26,262 - INFO - Starting get_connection
+2024-12-11 22:08:26,264 - INFO - Completed get_connection
+2024-12-11 22:08:26,279 - INFO - Completed store_notifications
+2024-12-11 22:08:26,279 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:08:26,279 - INFO - Denied by user
+2024-12-11 22:08:26,279 - INFO - Completed send_notification
+2024-12-11 22:08:26,283 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:08:26,285 - INFO - Notification Response Status: 200
+2024-12-11 22:08:26,285 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:08:26,285 - INFO - Access denied by user
+2024-12-11 22:09:39,073 - INFO - Started the project
+2024-12-11 22:09:39,076 - INFO - Started preprocessing features
+2024-12-11 22:09:39,076 - INFO - Loading the model...
+2024-12-11 22:09:42,849 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:09:53,792 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 5.0ms pre-process, 342.1ms inference, 2.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:09:54,227 - INFO - Starting send_notification
+2024-12-11 22:09:54,227 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:09:56,878 - INFO - Starting wait_for_response
+2024-12-11 22:09:57,103 - INFO - Completed wait_for_response
+2024-12-11 22:09:57,104 - INFO - Starting store_notifications
+2024-12-11 22:09:57,104 - INFO - Starting get_connection
+2024-12-11 22:10:01,210 - INFO - Completed get_connection
+2024-12-11 22:10:01,225 - INFO - Completed store_notifications
+2024-12-11 22:10:01,226 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:10:01,226 - INFO - Denied by user
+2024-12-11 22:10:01,226 - INFO - Completed send_notification
+2024-12-11 22:10:01,232 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:10:01,235 - INFO - Notification Response Status: 200
+2024-12-11 22:10:01,235 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:10:01,235 - INFO - Access denied by user
+2024-12-11 22:11:26,179 - INFO - Started the project
+2024-12-11 22:11:26,181 - INFO - Started preprocessing features
+2024-12-11 22:11:26,181 - INFO - Loading the model...
+2024-12-11 22:11:29,973 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:11:31,641 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 10.0ms pre-process, 337.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:11:32,200 - INFO - Starting send_notification
+2024-12-11 22:11:32,201 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:11:34,902 - INFO - Starting wait_for_response
+2024-12-11 22:11:45,131 - INFO - Received 'yes' response!
+2024-12-11 22:11:45,131 - INFO - Completed wait_for_response
+2024-12-11 22:11:45,131 - INFO - Starting store_notifications
+2024-12-11 22:11:45,131 - INFO - Starting get_connection
+2024-12-11 22:11:49,227 - INFO - Completed get_connection
+2024-12-11 22:11:49,236 - INFO - Completed store_notifications
+2024-12-11 22:11:49,236 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:11:49,236 - INFO - Granted by user
+2024-12-11 22:11:49,236 - INFO - Completed send_notification
+2024-12-11 22:11:49,241 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:11:49,243 - INFO - Notification Response Status: 200
+2024-12-11 22:11:49,243 - INFO - Notification Response Body: {"result":"granted"}
+
+2024-12-11 22:11:49,243 - INFO - Access granted by user
+2024-12-11 22:12:24,293 - INFO - Started the project
+2024-12-11 22:12:24,296 - INFO - Started preprocessing features
+2024-12-11 22:12:24,296 - INFO - Loading the model...
+2024-12-11 22:12:28,066 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:12:30,659 - INFO - Detections: image 1/1: 647x520 (no detections)
+Speed: 4.1ms pre-process, 339.9ms inference, 1.0ms NMS per image at shape (1, 3, 640, 544)
+2024-12-11 22:12:31,089 - INFO - Starting send_notification
+2024-12-11 22:12:31,090 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:12:33,895 - INFO - Starting wait_for_response
+2024-12-11 22:12:39,103 - INFO - Completed wait_for_response
+2024-12-11 22:12:39,103 - INFO - Starting store_notifications
+2024-12-11 22:12:39,103 - INFO - Starting get_connection
+2024-12-11 22:12:43,211 - INFO - Completed get_connection
+2024-12-11 22:12:43,214 - INFO - Completed store_notifications
+2024-12-11 22:12:43,215 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:12:43,215 - INFO - Denied by user
+2024-12-11 22:12:43,215 - INFO - Completed send_notification
+2024-12-11 22:12:43,217 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:12:43,218 - INFO - Notification Response Status: 200
+2024-12-11 22:12:43,218 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:12:43,218 - INFO - Access denied by user
+2024-12-11 22:13:47,320 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 7.0ms pre-process, 296.0ms inference, 8.0ms NMS per image at shape (1, 3, 448, 640)
+2024-12-11 22:13:47,321 - INFO - Access granted
+2024-12-11 22:14:09,523 - INFO - Starting index
+2024-12-11 22:14:09,526 - INFO - Completed index
+2024-12-11 22:15:28,288 - INFO - Starting index
+2024-12-11 22:15:28,289 - INFO - Completed index
+2024-12-11 22:15:49,262 - INFO - Starting index
+2024-12-11 22:15:49,263 - INFO - Completed index
+2024-12-11 22:17:32,596 - INFO - Started the project
+2024-12-11 22:17:32,599 - INFO - Started preprocessing features
+2024-12-11 22:17:32,600 - INFO - Loading the model...
+2024-12-11 22:17:36,406 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:17:38,466 - INFO - Starting index
+2024-12-11 22:17:38,472 - INFO - Completed index
+2024-12-11 22:21:25,921 - INFO - Starting index
+2024-12-11 22:21:25,921 - INFO - Completed index
+2024-12-11 22:24:36,863 - INFO - Starting index
+2024-12-11 22:24:36,863 - INFO - Completed index
+2024-12-11 22:24:52,321 - INFO - Started the project
+2024-12-11 22:24:52,324 - INFO - Started preprocessing features
+2024-12-11 22:24:52,324 - INFO - Loading the model...
+2024-12-11 22:24:56,220 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:24:59,394 - INFO - Starting index
+2024-12-11 22:24:59,436 - INFO - Completed index
+2024-12-11 22:26:55,539 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 4.0ms pre-process, 299.8ms inference, 2.0ms NMS per image at shape (1, 3, 448, 640)
+2024-12-11 22:26:55,540 - INFO - Access granted
+2024-12-11 22:28:23,315 - INFO - Detections: image 1/1: 720x1280 (no detections)
+Speed: 8.0ms pre-process, 284.0ms inference, 1.0ms NMS per image at shape (1, 3, 384, 640)
+2024-12-11 22:28:23,858 - INFO - Starting send_notification
+2024-12-11 22:28:23,859 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:28:26,538 - INFO - Starting wait_for_response
+2024-12-11 22:28:31,758 - INFO - Completed wait_for_response
+2024-12-11 22:28:31,758 - INFO - Starting store_notifications
+2024-12-11 22:28:31,758 - INFO - Starting get_connection
+2024-12-11 22:28:35,911 - INFO - Completed get_connection
+2024-12-11 22:28:35,916 - INFO - Completed store_notifications
+2024-12-11 22:28:35,916 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:28:35,916 - INFO - Denied by user
+2024-12-11 22:28:35,916 - INFO - Completed send_notification
+2024-12-11 22:28:35,920 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:28:35,921 - INFO - Notification Response Status: 200
+2024-12-11 22:28:35,921 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:28:35,921 - INFO - Access denied by user
+2024-12-11 22:28:53,802 - INFO - Detections: image 1/1: 720x1280 (no detections)
+Speed: 6.0ms pre-process, 247.1ms inference, 0.0ms NMS per image at shape (1, 3, 384, 640)
+2024-12-11 22:28:54,223 - INFO - Starting send_notification
+2024-12-11 22:28:54,223 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:28:56,641 - INFO - Starting wait_for_response
+2024-12-11 22:29:01,861 - INFO - Completed wait_for_response
+2024-12-11 22:29:01,861 - INFO - Starting store_notifications
+2024-12-11 22:29:01,861 - INFO - Starting get_connection
+2024-12-11 22:29:01,864 - INFO - Completed get_connection
+2024-12-11 22:29:01,873 - INFO - Completed store_notifications
+2024-12-11 22:29:01,873 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:29:01,873 - INFO - Denied by user
+2024-12-11 22:29:01,874 - INFO - Completed send_notification
+2024-12-11 22:29:01,877 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:29:01,879 - INFO - Notification Response Status: 200
+2024-12-11 22:29:01,879 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:29:01,879 - INFO - Access denied by user
+2024-12-11 22:29:27,219 - INFO - Detections: image 1/1: 720x1280 (no detections)
+Speed: 5.0ms pre-process, 238.0ms inference, 0.0ms NMS per image at shape (1, 3, 384, 640)
+2024-12-11 22:29:27,633 - INFO - Starting send_notification
+2024-12-11 22:29:27,633 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:29:30,242 - INFO - Starting wait_for_response
+2024-12-11 22:29:35,472 - INFO - Received 'yes' response!
+2024-12-11 22:29:35,472 - INFO - Completed wait_for_response
+2024-12-11 22:29:35,472 - INFO - Starting store_notifications
+2024-12-11 22:29:35,473 - INFO - Starting get_connection
+2024-12-11 22:29:35,475 - INFO - Completed get_connection
+2024-12-11 22:29:35,493 - INFO - Completed store_notifications
+2024-12-11 22:29:35,493 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:29:35,493 - INFO - Granted by user
+2024-12-11 22:29:35,493 - INFO - Completed send_notification
+2024-12-11 22:29:35,497 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:29:35,499 - INFO - Notification Response Status: 200
+2024-12-11 22:29:35,499 - INFO - Notification Response Body: {"result":"granted"}
+
+2024-12-11 22:29:35,500 - INFO - Access granted by user
+2024-12-11 22:30:30,695 - INFO - Starting get_names
+2024-12-11 22:30:30,695 - INFO - Starting get_custom_data_from_custom_table
+2024-12-11 22:30:30,695 - INFO - Starting get_connection
+2024-12-11 22:30:30,696 - INFO - Completed get_connection
+2024-12-11 22:30:30,708 - INFO - Completed get_custom_data_from_custom_table
+2024-12-11 22:30:30,708 - ERROR - Error at get_names: dictionary update sequence element #0 has length 8; 2 is required
+2024-12-11 22:30:30,708 - INFO - Completed get_names
+2024-12-11 22:32:35,092 - INFO - Starting get_names
+2024-12-11 22:32:35,093 - INFO - Starting get_custom_data_from_custom_table
+2024-12-11 22:32:35,093 - INFO - Starting get_connection
+2024-12-11 22:32:39,183 - INFO - Completed get_connection
+2024-12-11 22:32:39,187 - INFO - Completed get_custom_data_from_custom_table
+2024-12-11 22:32:39,187 - ERROR - Error at get_names: dictionary update sequence element #0 has length 8; 2 is required
+2024-12-11 22:32:39,187 - INFO - Completed get_names
+2024-12-11 22:32:48,741 - INFO - Detections: image 1/1: 488x337 (no detections)
+Speed: 9.2ms pre-process, 294.0ms inference, 0.0ms NMS per image at shape (1, 3, 640, 448)
+2024-12-11 22:32:49,249 - INFO - Starting send_notification
+2024-12-11 22:32:49,250 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-11 22:32:51,103 - INFO - Starting wait_for_response
+2024-12-11 22:32:56,324 - INFO - Completed wait_for_response
+2024-12-11 22:32:56,324 - INFO - Starting store_notifications
+2024-12-11 22:32:56,324 - INFO - Starting get_connection
+2024-12-11 22:32:56,327 - INFO - Completed get_connection
+2024-12-11 22:32:56,341 - INFO - Completed store_notifications
+2024-12-11 22:32:56,341 - INFO - {'message': 'Notification sent successfully'}
+2024-12-11 22:32:56,341 - INFO - Denied by user
+2024-12-11 22:32:56,341 - INFO - Completed send_notification
+2024-12-11 22:32:56,346 - INFO - HTTP Request: POST http://192.168.45.249:5000/send_notification "HTTP/1.1 200 "
+2024-12-11 22:32:56,349 - INFO - Notification Response Status: 200
+2024-12-11 22:32:56,349 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-11 22:32:56,349 - INFO - Access denied by user
+2024-12-11 22:35:58,665 - INFO - Starting get_names
+2024-12-11 22:35:58,666 - INFO - Starting get_custom_data_from_custom_table
+2024-12-11 22:35:58,666 - INFO - Starting get_connection
+2024-12-11 22:36:02,751 - INFO - Completed get_connection
+2024-12-11 22:36:02,764 - INFO - Completed get_custom_data_from_custom_table
+2024-12-11 22:36:02,764 - ERROR - Error at get_names: dictionary update sequence element #0 has length 8; 2 is required
+2024-12-11 22:36:02,764 - INFO - Completed get_names
+2024-12-11 22:38:22,761 - INFO - Started the project
+2024-12-11 22:38:22,763 - INFO - Started preprocessing features
+2024-12-11 22:38:22,763 - INFO - Loading the model...
+2024-12-11 22:38:26,666 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:38:28,724 - INFO - Starting get_names
+2024-12-11 22:38:28,724 - INFO - Starting get_connection
+2024-12-11 22:38:32,861 - INFO - Completed get_connection
+2024-12-11 22:38:32,865 - INFO - Completed get_names
+2024-12-11 22:38:39,486 - INFO - Starting index
+2024-12-11 22:38:39,490 - INFO - Completed index
+2024-12-11 22:38:58,981 - INFO - Starting index
+2024-12-11 22:38:58,982 - INFO - Completed index
+2024-12-11 22:39:57,890 - INFO - Starting index
+2024-12-11 22:39:57,890 - INFO - Completed index
+2024-12-11 22:41:07,077 - INFO - Started the project
+2024-12-11 22:41:07,079 - INFO - Started preprocessing features
+2024-12-11 22:41:07,080 - INFO - Loading the model...
+2024-12-11 22:41:10,973 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:41:12,058 - INFO - Starting index
+2024-12-11 22:41:12,103 - INFO - Completed index
+2024-12-11 22:41:23,860 - INFO - Starting get_names
+2024-12-11 22:41:23,860 - INFO - Starting get_connection
+2024-12-11 22:41:27,958 - INFO - Completed get_connection
+2024-12-11 22:41:27,961 - INFO - Completed get_names
+2024-12-11 22:43:30,098 - INFO - Started the project
+2024-12-11 22:43:30,099 - INFO - Started preprocessing features
+2024-12-11 22:43:30,100 - INFO - Loading the model...
+2024-12-11 22:43:33,903 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-11 22:43:39,898 - INFO - Starting index
+2024-12-11 22:43:39,937 - INFO - Completed index
+2024-12-11 22:45:00,676 - INFO - Starting index
+2024-12-11 22:45:00,676 - INFO - Completed index
+2024-12-11 22:46:19,185 - INFO - Starting get_names
+2024-12-11 22:46:19,186 - INFO - Starting get_connection
+2024-12-11 22:46:23,349 - INFO - Completed get_connection
+2024-12-11 22:46:23,352 - INFO - Completed get_names

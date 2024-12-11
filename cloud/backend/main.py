@@ -16,9 +16,13 @@ sys.path.insert(0,r'D:\\Personal\\codes\\project capstone\\cloud\\ml_yolov5')
 import model_yolo_for_recog as M_Yolo_Recog
 import asyncio,datetime,aiofiles
 import traceback, time,json,re
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # Initialize Pushbullet API for sending notifications
-pb = Pushbullet('o.bsH5YVU6T6OSJc8K0K8uSKmUorMK7oRx')
+pb = Pushbullet(os.getenv("PUSHBULLET_API_KEY"))
 logging.info("Started the project")
 
 # Initialize Quart app and enable Cross-Origin Resource Sharing (CORS)
@@ -268,7 +272,6 @@ async def add_face():
         'user_id':       user_id,
         'name':          name,
         'image_path':    image_path,
-        
         'encoding_data': pickle.dumps(embedding),
         'added_at':      datetime.datetime.now(),
         'is_active':     True,

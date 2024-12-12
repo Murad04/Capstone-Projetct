@@ -30,9 +30,11 @@ os.makedirs(LOG_DIR, exist_ok=True)
 cache_dir = os.path.dirname(CACHE_FILE)
 os.makedirs(cache_dir, exist_ok=True)
 
+log_file_path = os.path.join(LOG_DIR,'app.log')
+
 # Configure logging with a rotating file handler
 handler = RotatingFileHandler(
-    LOG_DIR,                                                    # Log directory
+    log_file_path,                                                    # Log directory
     maxBytes=1024 * 1024,                                       # Maximum log size before rotation (1 MB)
     backupCount=2                                               # Number of backup logs to keep
 )

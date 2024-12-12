@@ -19,6 +19,8 @@ import traceback, time,json,re
 from dotenv import load_dotenv
 import os
 
+TEMP_IMAGE_DIR='temp_image.jpg'
+
 load_dotenv()
 
 # Initialize Pushbullet API for sending notifications

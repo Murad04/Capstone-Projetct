@@ -33,9 +33,9 @@ def load_model_once():
     if global_model is None:
         try:
             global_device = get_device()
-            model_path = r"cloud/ml_yolov5/best.pt"
+            model_path = r"ml_yolov5\\best.pt"
             global_model = torch.hub.load(
-                r'cloud/ml_yolov5/content/yolov5',
+                r'ml_yolov5\\content\\yolov5',
                 'custom',
                 path=model_path,
                 device=global_device,

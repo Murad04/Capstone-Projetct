@@ -72,7 +72,8 @@ logging.info('Finished loading the model')
 @log_function
 def is_btn_pressed(BTN_PIN):
     """Returns True if the specified button pin is pressed."""
-    return GPIO.input(BTN_PIN) == GPIO.HIGH
+    if GPIO.input(BTN_PIN) == GPIO.HIGH:return 'pressed'
+    else:return 'not pressed'
 
 @log_function
 async def request_image_from_pc(pc_url):
@@ -215,23 +216,24 @@ async def main():
     asyncio.create_task(clear_cache_periodically())   
     # Load the YOLO model for face detection
     logging.info('awaiting load model')
-    await yolo_setup.load_model()
+    #yolo_setup.load_model_once()
     logging.info('model loaded')
     try:
         while True:
-            if is_btn_pressed(START_PIN):                                   # If start button is pressed
-                pc_url = "http://<pc-ip>:5000"                              # Replace <pc-ip> with your PC's IP address
+            if await is_btn_pressed(START_PIN)=='pressed':  
+                logging.info('start')                                 # If start button is pressed
+                pc_url = "http://192.168.137.214:5000"                              # Replace <pc-ip> with your PC's IP address
                 image_path = await request_image_from_pc(pc_url)            # Request an image from the PC
                 if image_path:                                              # Proceed if the image was successfully received
-                    embedding = await yolo_setup.get_face_embedding(image_path)
-                    threshold = 0.5
-                    cached_result = await check_cache(embedding, threshold) # Check cache
-                    if cached_result and cached_result["result"] == "granted":
-                        await process_access()                              # Grant access
-                    else:
-                        result = await send_to_cloud(image_path, os.getenv('SERVER_MAIN_URL')) # Send to cloud
+                    #embedding = await yolo_setup.get_face_embedding(image_path)
+                    #threshold = 0.5
+                    #cached_result = await check_cache(embedding, threshold) # Check cache
+                    #if cached_result and cached_result["result"] == "granted":
+                    #    await process_access()                              # Grant access
+                    #else:
+                        result = await send_to_cloud(image_path, '192.168.137.214')) # Send to cloud
                         if result and result['result'] == 'granted':
-                            await add_to_cache(embedding, result['similarity'], result['result'])
+                            #await add_to_cache(embedding, result['similarity'], result['result'])
                             await process_access()
                 await asyncio.sleep(1)                                      # Delay to prevent button bouncing
 

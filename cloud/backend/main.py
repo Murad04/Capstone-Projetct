@@ -162,14 +162,14 @@ async def recognize():
             return jsonify({'result': 'granted'})
 
         # If no detections, send notification
-        main_url = 'https://capstone-projetct.onrender.com:5000'
+        main_url = os.getenv("SERVER_MAIN_URL")
         notification_payload = {
             "title": "Face Recognition Alert",
             "message": "No face detected. Do you want to grant access?",
             "user_id": 123,  # Replace with the actual user ID if applicable
             "log_id": 456,   # Replace with the actual log ID if applicable
             "notification_type": "access_request",
-            'file': "temp_image.jpg"
+            'file': r"D:\\Personal\\codes\\project capstone\\temp_image.jpg"
         }
 
         async with httpx.AsyncClient(timeout=30.0) as client:

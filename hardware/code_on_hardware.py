@@ -18,9 +18,16 @@ d = 128                                                         # Adjust based o
 index = faiss.IndexFlatL2(d)                                    # FAISS index for similarity search
 
 # File paths for cache, image storage, and logs
-CACHE_FILE = "/app/face_cache"
-IMAGE_DIR = '/app/images/'
-LOG_DIR = '/app/logs/'
+# File paths for cache, image storage, and logs
+CACHE_FILE = "/home/Teamc/Desktop/Capstone-Project/app/face_cache"
+IMAGE_DIR = '/home/Teamc/Desktop/Capstone-Project/app/images/'
+LOG_DIR = '/home/Teamc/Desktop/Capstone-Project/app/logs/'
+
+# Create necessary directories if they don't exist
+os.makedirs(IMAGE_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
+cache_dir = os.path.dirname(CACHE_FILE)
+os.makedirs(cache_dir, exist_ok=True)
 
 # Configure logging with a rotating file handler
 handler = RotatingFileHandler(
@@ -185,7 +192,7 @@ async def main():
                 image_path = await capture_image()                          # Capture and process image
                 embedding = await yolo_setup.get_face_embedding(image_path)
                 threshold = 0.5
-                cloud_url = "192.168.45.100"
+                cloud_url = "192.168.45.70"
                 cached_result = await check_cache(embedding, threshold)     # Check cache
                 if cached_result and cached_result["result"] == "granted":
                     await process_access()                                  # Grant access

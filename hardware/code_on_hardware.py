@@ -214,9 +214,9 @@ async def main():
     """Main event loop for button handling and system operation."""
     asyncio.create_task(clear_cache_periodically())   
     # Load the YOLO model for face detection
-    logging.log('awaiting load model')
+    logging.info('awaiting load model')
     await yolo_setup.load_model()
-    logging.log('model loaded')
+    logging.info('model loaded')
     try:
         while True:
             if is_btn_pressed(START_PIN):                                   # If start button is pressed

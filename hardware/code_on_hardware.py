@@ -225,5 +225,5 @@ async def main():
     finally:
         GPIO.cleanup()                                                      # Clean up GPIO settings on exit
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     asyncio.run(main())                                                     # Start the main event loop

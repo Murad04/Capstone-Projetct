@@ -5,7 +5,7 @@ import numpy as np
 import httpx
 #from picamera import PiCamera
 import RPi.GPIO as GPIO
-from torchvision import transforms
+#from torchvision import transforms
 from logging.handlers import RotatingFileHandler
 import faiss
 import yolo_setup

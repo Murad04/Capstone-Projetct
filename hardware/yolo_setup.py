@@ -9,7 +9,7 @@ device = "cpu"  # Device to load the model on ('cpu' or 'cuda' for GPU)
 global model, transform  # Declare global variables for the model and transformation pipeline
 
 @log_function
-def load_model():
+async def load_model():
     """
     Loads the pre-trained face recognition model and sets up the transformation pipeline.
     """

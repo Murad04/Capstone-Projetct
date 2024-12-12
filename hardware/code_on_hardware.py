@@ -63,8 +63,6 @@ GPIO.setup(RESET_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)      # Reset button w
 logging.info("Pushbullet, GPIO setup, picamera done")
 logging.info("Starting to load the ML model")
 
-# Load the YOLO model for face detection
-yolo_setup.load_model()
 
 #camera.resolution = (640, 480)  
 
@@ -214,7 +212,9 @@ async def reset_system():
 @log_function
 async def main():
     """Main event loop for button handling and system operation."""
-    asyncio.create_task(clear_cache_periodically())                         # Start periodic cache clearing
+    asyncio.create_task(clear_cache_periodically())   
+    # Load the YOLO model for face detection
+    await yolo_setup.load_model()
     try:
         while True:
             if is_btn_pressed(START_PIN):                                   # If start button is pressed

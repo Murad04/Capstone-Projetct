@@ -20,9 +20,9 @@ index = faiss.IndexFlatL2(d)                                    # FAISS index fo
 
 # File paths for cache, image storage, and logs
 # File paths for cache, image storage, and logs
-CACHE_FILE = "/home/Teamc/Desktop/Capstone-Project/app/face_cache"
-IMAGE_DIR = '/home/Teamc/Desktop/Capstone-Project/app/images/'
-LOG_DIR = '/home/Teamc/Desktop/Capstone-Project/app/logs/'
+CACHE_FILE = "~/Desktop/Capstone-Project/app/face_cache"
+IMAGE_DIR = '~/Desktop/Capstone-Project/app/images/'
+LOG_DIR = '~/Desktop/Capstone-Project/app/logs/'
 
 # Create necessary directories if they don't exist
 os.makedirs(IMAGE_DIR, exist_ok=True)

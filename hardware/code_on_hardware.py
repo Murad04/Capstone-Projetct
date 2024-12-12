@@ -20,9 +20,9 @@ index = faiss.IndexFlatL2(d)                                    # FAISS index fo
 
 # File paths for cache, image storage, and logs
 # File paths for cache, image storage, and logs
-CACHE_FILE = "/app/face_cache"
-IMAGE_DIR = '/app/images/'
-LOG_DIR = '/app/logs/'
+CACHE_FILE = "./face_cache/"
+IMAGE_DIR = './images/'
+LOG_DIR = './logs/'
 
 # Create necessary directories if they don't exist
 os.makedirs(IMAGE_DIR, exist_ok=True)

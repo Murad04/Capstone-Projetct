@@ -1,4 +1,4 @@
-from quart import Quart, request, jsonify, render_template, websocket
+from quart import Quart, request, jsonify, render_template, websocket, send_file
 import torch
 import cv2
 import numpy as np
@@ -321,6 +321,34 @@ async def send_notification():
             "error": str(ex),
             "traceback": error_traceback
         }), 500
+    
+# Endpoint for raspbery to get camera images
+@app.route("/capture_image", methods=["GET"])
+async def capture_image():
+    """
+    Captures an image using the PC webcam and returns it as a response.
+    """
+    try:
+        # Access the webcam (index 0 for the default camera)
+        cap = cv2.VideoCapture(0)
+        if not cap.isOpened():
+            return jsonify({"error": "Unable to access the webcam"}), 500
+
+        # Capture a frame
+        ret, frame = cap.read()
+        cap.release()
+        if not ret:
+            return jsonify({"error": "Failed to capture image"}), 500
+
+        # Save the captured frame to a temporary file
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        temp_image_path = os.path.join(TEMP_IMAGE_DIR, f"captured_{timestamp}.jpg")
+        cv2.imwrite(temp_image_path, frame)
+
+        # Send the image file as the response
+        return await send_file(temp_image_path, mimetype='image/jpeg')
+    except Exception as ex:
+        return jsonify({"error": str(ex)}), 500    
 
 # Endpoint for user login
 @app.route("/login", methods=['POST'])

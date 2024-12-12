@@ -12,6 +12,7 @@ import yolo_setup
 import datetime
 import os, glob, subprocess
 from base_logger import log_function
+import os
 
 # Embedding dimension for FAISS
 d = 128                                                         # Adjust based on embedding requirements
@@ -72,6 +73,32 @@ logging.info('Finished loading the model')
 def is_btn_pressed(BTN_PIN):
     """Returns True if the specified button pin is pressed."""
     return GPIO.input(BTN_PIN) == GPIO.HIGH
+
+@log_function
+async def request_image_from_pc(pc_url):
+    """
+    Sends a request to the PC to capture an image and saves the image locally.
+    Args:
+        pc_url (str): The URL of the PC's image capture endpoint.
+    Returns:
+        str: Path to the saved image on the Raspberry Pi.
+    """
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.get(f"{pc_url}/capture_image", timeout=10)
+            if response.status_code == 200:
+                # Save the image locally
+                image_path = f"{IMAGE_DIR}/received_image_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
+                with open(image_path, "wb") as image_file:
+                    image_file.write(response.content)
+                logging.info(f"Image received from PC and saved at {image_path}")
+                return image_path
+            else:
+                logging.error(f"Failed to capture image from PC. Status code: {response.status_code}")
+                return None
+    except httpx.RequestError as e:
+        logging.error(f"Request error while capturing image from PC: {e}")
+        return None
 
 # Function to capture an image and extract the face
 @log_function
@@ -189,18 +216,19 @@ async def main():
     try:
         while True:
             if is_btn_pressed(START_PIN):                                   # If start button is pressed
-                image_path = await capture_image()                          # Capture and process image
-                embedding = await yolo_setup.get_face_embedding(image_path)
-                threshold = 0.5
-                cloud_url = "192.168.45.70"
-                cached_result = await check_cache(embedding, threshold)     # Check cache
-                if cached_result and cached_result["result"] == "granted":
-                    await process_access()                                  # Grant access
-                else:
-                    result = await send_to_cloud(image_path, cloud_url)     # Send to cloud
-                    if result and result['result'] == 'granted':
-                        await add_to_cache(embedding, result['similarity'], result['result'])
-                        await process_access()
+                pc_url = "http://<pc-ip>:5000"                              # Replace <pc-ip> with your PC's IP address
+                image_path = await request_image_from_pc(pc_url)            # Request an image from the PC
+                if image_path:                                              # Proceed if the image was successfully received
+                    embedding = await yolo_setup.get_face_embedding(image_path)
+                    threshold = 0.5
+                    cached_result = await check_cache(embedding, threshold) # Check cache
+                    if cached_result and cached_result["result"] == "granted":
+                        await process_access()                              # Grant access
+                    else:
+                        result = await send_to_cloud(image_path, os.getenv('SERVER_MAIN_URL')) # Send to cloud
+                        if result and result['result'] == 'granted':
+                            await add_to_cache(embedding, result['similarity'], result['result'])
+                            await process_access()
                 await asyncio.sleep(1)                                      # Delay to prevent button bouncing
 
             if is_btn_pressed(SHUT_DOWN_PIN):                               # If shutdown button is pressed

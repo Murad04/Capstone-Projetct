@@ -2289,3 +2289,7 @@ Traceback (most recent call last):
     raise mapped_exc(message) from exc
 httpx.ConnectError: All connection attempts failed
 
+2024-12-12 12:43:24,404 - INFO - Started the project
+2024-12-12 12:43:24,408 - INFO - Started preprocessing features
+2024-12-12 12:43:24,409 - INFO - Loading the model...
+2024-12-12 12:43:30,044 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)

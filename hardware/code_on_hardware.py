@@ -3,8 +3,8 @@ import logging
 import shelve
 import numpy as np
 import httpx
-from picamera import PiCamera
 import RPi.GPIO as GPIO
+import cv2  # OpenCV for image capture
 from torchvision import transforms
 from logging.handlers import RotatingFileHandler
 import faiss
@@ -17,7 +17,6 @@ from base_logger import log_function
 d = 128                                                         # Adjust based on embedding requirements
 index = faiss.IndexFlatL2(d)                                    # FAISS index for similarity search
 
-# File paths for cache, image storage, and logs
 # File paths for cache, image storage, and logs
 CACHE_FILE = "/home/Teamc/Desktop/Capstone-Project/app/face_cache"
 IMAGE_DIR = '/home/Teamc/Desktop/Capstone-Project/app/images/'
@@ -41,29 +40,30 @@ logging.info('Started the code_on_hardware')
 
 # GPIO PIN configuration
 START_PIN = 27                                                  # Start button pin
-#DOOR_PIN = 18                                                  # Door relay control pin
 BEEP_PIN = 18                                                   # Buzzer control pin
 SHUT_DOWN_PIN = 22                                              # Shutdown button pin
 RESET_PIN = 17                                                  # Reset button pin
 
 # Initialize GPIO pins
 GPIO.setmode(GPIO.BCM)                                          # Use Broadcom (BCM) numbering
-#GPIO.setup(DOOR_PIN, GPIO.OUT)                                 # Set door pin as output
 GPIO.setup(BEEP_PIN, GPIO.OUT)                                  # Set buzzer pin as output
 GPIO.setup(START_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)      # Start button with pull-down resistor
 GPIO.setup(SHUT_DOWN_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # Shutdown button with pull-down resistor
 GPIO.setup(RESET_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)      # Reset button with pull-down resistor
 
-# Initialize the camera
-camera = PiCamera()
+# Initialize the camera using OpenCV
+camera = cv2.VideoCapture(0)  # 0 for default camera, change if using another one
 
-logging.info("Pushbullet, GPIO setup, picamera done")
+if not camera.isOpened():
+    logging.error("Error: Camera not found!")
+else:
+    logging.info("Camera initialized successfully")
+
+logging.info("Pushbullet, GPIO setup, OpenCV camera done")
 logging.info("Starting to load the ML model")
 
 # Load the YOLO model for face detection
 yolo_setup.load_model()
-
-camera.resolution = (640, 480)  
 
 logging.info('Finished loading the model')
 
@@ -76,12 +76,20 @@ def is_btn_pressed(BTN_PIN):
 # Function to capture an image and extract the face
 @log_function
 async def capture_image():
-    """Captures an image using the PiCamera and extracts the face."""
+    """Captures an image using OpenCV and extracts the face."""
+    # Capture frame-by-frame
+    ret, frame = camera.read()
+    if not ret:
+        logging.error("Failed to capture image")
+        return None
+    
     # Generate a timestamp for the image file name
     t_stamp = f'{datetime.date.today()}_{datetime.datetime.now().strftime("%H-%M-%S")}'
     image_path = f"{IMAGE_DIR}/captured_image_{t_stamp}.jpg"
-    camera.capture(image_path)                                  # Capture the image
-    face_image = yolo_setup.capture_face(image_path)            # Extract the face region
+    cv2.imwrite(image_path, frame)  # Save the captured frame to a file
+
+    # Extract face from the captured image using YOLO
+    face_image = yolo_setup.capture_face(image_path)
     return face_image
 
 # Function to check the cache for previous authentication results
@@ -217,5 +225,5 @@ async def main():
     finally:
         GPIO.cleanup()                                                      # Clean up GPIO settings on exit
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     asyncio.run(main())                                                     # Start the main event loop

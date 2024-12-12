@@ -66,7 +66,7 @@ async def wait_for_response():
             return 'not granted'
         
         # Fetch the latest pushes
-        time.sleep(5)
+        time.sleep(10)
         pushes = pb.get_pushes(limit=1)  # Limit to last 10 pushes to reduce load
         for push in pushes:
             # Check if the push contains the text "yes"
@@ -162,14 +162,14 @@ async def recognize():
             return jsonify({'result': 'granted'})
 
         # If no detections, send notification
-        main_url = 'http://192.168.45.249:5000'
+        main_url = 'https://capstone-projetct.onrender.com:5000'
         notification_payload = {
             "title": "Face Recognition Alert",
             "message": "No face detected. Do you want to grant access?",
             "user_id": 123,  # Replace with the actual user ID if applicable
             "log_id": 456,   # Replace with the actual log ID if applicable
             "notification_type": "access_request",
-            'file': r"D:\\Personal\\codes\\project capstone\\temp_image.jpg"
+            'file': "temp_image.jpg"
         }
 
         async with httpx.AsyncClient(timeout=30.0) as client:

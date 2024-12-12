@@ -185,7 +185,7 @@ async def main():
                 image_path = await capture_image()                          # Capture and process image
                 embedding = await yolo_setup.get_face_embedding(image_path)
                 threshold = 0.5
-                cloud_url = "your_cloud_url_here"
+                cloud_url = "192.168.45.100"
                 cached_result = await check_cache(embedding, threshold)     # Check cache
                 if cached_result and cached_result["result"] == "granted":
                     await process_access()                                  # Grant access

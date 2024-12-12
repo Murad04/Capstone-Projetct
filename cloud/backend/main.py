@@ -68,7 +68,7 @@ async def wait_for_response():
             return 'not granted'
         
         # Fetch the latest pushes
-        time.sleep(10)
+        time.sleep(18)
         pushes = pb.get_pushes(limit=1)  # Limit to last 10 pushes to reduce load
         for push in pushes:
             # Check if the push contains the text "yes"
@@ -171,7 +171,7 @@ async def recognize():
             "user_id": 123,  # Replace with the actual user ID if applicable
             "log_id": 456,   # Replace with the actual log ID if applicable
             "notification_type": "access_request",
-            'file': r"D:\\Personal\\codes\\project capstone\\temp_image.jpg"
+            'file': "temp_image.jpg"
         }
 
         async with httpx.AsyncClient(timeout=30.0) as client:
@@ -300,7 +300,7 @@ async def send_notification():
     
     
     with open(file_path, "rb") as pic:
-        file_data = pb.upload_file(pic, "picture.jpg")
+        file_data = pb.upload_file(pic, "temp_image.jpg")
 
     # Send notification via Pushbullet
     try:

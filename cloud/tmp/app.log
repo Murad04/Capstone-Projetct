@@ -2464,3 +2464,891 @@ Speed: 5.0ms pre-process, 286.0ms inference, 1.0ms NMS per image at shape (1, 3,
 2024-12-12 19:02:00,540 - INFO - Notification Response Body: {"result":"not granted"}
 
 2024-12-12 19:02:00,540 - INFO - Access denied by user
+2024-12-12 20:32:34,974 - INFO - Started the project
+2024-12-12 20:32:34,978 - INFO - Started preprocessing features
+2024-12-12 20:32:34,978 - INFO - Loading the model...
+2024-12-12 20:32:43,706 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:33:05,018 - INFO - Detections: image 1/1: 488x337 (no detections)
+Speed: 8.0ms pre-process, 441.3ms inference, 2.0ms NMS per image at shape (1, 3, 640, 448)
+2024-12-12 20:33:05,665 - INFO - Starting send_notification
+2024-12-12 20:33:05,666 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:33:09,008 - INFO - Starting wait_for_response
+2024-12-12 20:33:19,240 - INFO - Completed wait_for_response
+2024-12-12 20:33:19,240 - INFO - Starting store_notifications
+2024-12-12 20:33:19,240 - INFO - Starting get_connection
+2024-12-12 20:33:23,431 - INFO - Completed get_connection
+2024-12-12 20:33:23,442 - INFO - Completed store_notifications
+2024-12-12 20:33:23,443 - INFO - {'message': 'Notification sent successfully'}
+2024-12-12 20:33:23,443 - INFO - Denied by user
+2024-12-12 20:33:23,443 - INFO - Completed send_notification
+2024-12-12 20:33:23,448 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 200 "
+2024-12-12 20:33:23,449 - INFO - Notification Response Status: 200
+2024-12-12 20:33:23,450 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-12 20:33:23,450 - INFO - Access denied by user
+2024-12-12 20:40:08,986 - INFO - Started the project
+2024-12-12 20:40:08,988 - INFO - Started preprocessing features
+2024-12-12 20:40:08,989 - INFO - Loading the model...
+2024-12-12 20:40:16,304 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:47:12,623 - INFO - Started the project
+2024-12-12 20:47:12,627 - INFO - Started preprocessing features
+2024-12-12 20:47:12,628 - INFO - Loading the model...
+2024-12-12 20:47:20,054 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:47:32,798 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.3ms pre-process, 321.4ms inference, 2.6ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:47:33,256 - INFO - Starting send_notification
+2024-12-12 20:47:33,256 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:47:36,117 - INFO - Starting wait_for_response
+2024-12-12 20:47:54,345 - INFO - Completed wait_for_response
+2024-12-12 20:47:54,345 - INFO - Starting store_notifications
+2024-12-12 20:47:54,345 - INFO - Starting get_connection
+2024-12-12 20:48:03,002 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 8.0ms pre-process, 292.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:48:03,516 - INFO - Starting send_notification
+2024-12-12 20:48:03,517 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:48:06,736 - INFO - Starting wait_for_response
+2024-12-12 20:48:24,965 - INFO - Completed wait_for_response
+2024-12-12 20:48:24,965 - INFO - Starting store_notifications
+2024-12-12 20:48:24,965 - INFO - Starting get_connection
+2024-12-12 20:48:24,969 - INFO - Completed get_connection
+2024-12-12 20:48:25,372 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 10.0ms pre-process, 290.0ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:48:25,838 - INFO - Starting send_notification
+2024-12-12 20:48:25,839 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:48:28,536 - INFO - Starting wait_for_response
+2024-12-12 20:48:46,847 - INFO - Completed wait_for_response
+2024-12-12 20:48:46,847 - INFO - Starting store_notifications
+2024-12-12 20:48:46,847 - INFO - Starting get_connection
+2024-12-12 20:48:46,850 - INFO - Completed get_connection
+2024-12-12 20:48:52,835 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 10.0ms pre-process, 286.7ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:48:53,286 - INFO - Starting send_notification
+2024-12-12 20:48:53,287 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:48:56,401 - INFO - Starting wait_for_response
+2024-12-12 20:49:14,629 - INFO - Completed wait_for_response
+2024-12-12 20:49:14,630 - INFO - Starting store_notifications
+2024-12-12 20:49:14,630 - INFO - Starting get_connection
+2024-12-12 20:49:14,632 - INFO - Completed get_connection
+2024-12-12 20:49:43,409 - INFO - Started the project
+2024-12-12 20:49:43,411 - INFO - Started preprocessing features
+2024-12-12 20:49:43,411 - INFO - Loading the model...
+2024-12-12 20:49:47,373 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:49:50,138 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 6.0ms pre-process, 321.5ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:49:50,597 - INFO - Starting send_notification
+2024-12-12 20:49:50,597 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:49:53,953 - INFO - Starting wait_for_response
+2024-12-12 20:50:12,189 - INFO - Completed wait_for_response
+2024-12-12 20:50:12,189 - INFO - Starting store_notifications
+2024-12-12 20:50:12,189 - INFO - Starting get_connection
+2024-12-12 20:50:16,307 - INFO - Completed get_connection
+2024-12-12 20:50:16,318 - INFO - Completed store_notifications
+2024-12-12 20:50:16,319 - INFO - {'message': 'Notification sent successfully'}
+2024-12-12 20:50:16,319 - INFO - Denied by user
+2024-12-12 20:50:16,319 - INFO - Completed send_notification
+2024-12-12 20:50:16,323 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 200 "
+2024-12-12 20:50:16,324 - INFO - Notification Response Status: 200
+2024-12-12 20:50:16,324 - INFO - Notification Response Body: {"result":"not granted"}
+
+2024-12-12 20:50:16,324 - INFO - Access denied by user
+2024-12-12 20:50:18,001 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 12.0ms pre-process, 327.7ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:50:18,437 - INFO - Starting send_notification
+2024-12-12 20:50:18,437 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:50:18,438 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:50:18,446 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:50:18,447 - INFO - Notification Response Status: 500
+2024-12-12 20:50:18,448 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:50:18,448 - ERROR - Failed to send notification: 500
+2024-12-12 20:50:23,175 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 9.0ms pre-process, 557.7ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:50:23,674 - INFO - Starting send_notification
+2024-12-12 20:50:23,675 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:50:23,675 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:50:23,682 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:50:23,684 - INFO - Notification Response Status: 500
+2024-12-12 20:50:23,684 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:50:23,684 - ERROR - Failed to send notification: 500
+2024-12-12 20:50:39,419 - INFO - Started the project
+2024-12-12 20:50:39,421 - INFO - Started preprocessing features
+2024-12-12 20:50:39,422 - INFO - Loading the model...
+2024-12-12 20:50:43,133 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:50:45,250 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 345.9ms inference, 2.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:50:45,784 - INFO - Starting send_notification
+2024-12-12 20:50:45,785 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:50:45,785 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:50:45,797 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:50:45,813 - INFO - Notification Response Status: 500
+2024-12-12 20:50:45,814 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:50:45,814 - ERROR - Failed to send notification: 500
+2024-12-12 20:50:50,910 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 7.0ms pre-process, 298.6ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:50:51,361 - INFO - Starting send_notification
+2024-12-12 20:50:51,362 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:50:51,362 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:50:51,368 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:50:51,370 - INFO - Notification Response Status: 500
+2024-12-12 20:50:51,370 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:50:51,370 - ERROR - Failed to send notification: 500
+2024-12-12 20:52:31,715 - INFO - Started the project
+2024-12-12 20:52:31,718 - INFO - Started preprocessing features
+2024-12-12 20:52:31,718 - INFO - Loading the model...
+2024-12-12 20:53:12,309 - INFO - Started the project
+2024-12-12 20:53:12,311 - INFO - Started preprocessing features
+2024-12-12 20:53:12,312 - INFO - Loading the model...
+2024-12-12 20:53:16,349 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:53:20,969 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 309.6ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:53:21,409 - INFO - Starting send_notification
+2024-12-12 20:53:21,409 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:53:21,410 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:53:21,417 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:53:21,420 - INFO - Notification Response Status: 500
+2024-12-12 20:53:21,420 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:53:21,420 - ERROR - Failed to send notification: 500
+2024-12-12 20:53:50,548 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 8.0ms pre-process, 302.4ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:53:51,021 - INFO - Starting send_notification
+2024-12-12 20:53:51,021 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:53:51,022 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:53:51,027 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:53:51,030 - INFO - Notification Response Status: 500
+2024-12-12 20:53:51,031 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:53:51,031 - ERROR - Failed to send notification: 500
+2024-12-12 20:54:14,022 - INFO - Starting index
+2024-12-12 20:54:14,071 - INFO - Completed index
+2024-12-12 20:54:30,695 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 11.0ms pre-process, 291.3ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:54:31,176 - INFO - Starting send_notification
+2024-12-12 20:54:31,178 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:54:31,179 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:54:31,182 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:54:31,183 - INFO - Notification Response Status: 500
+2024-12-12 20:54:31,183 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:54:31,183 - ERROR - Failed to send notification: 500
+2024-12-12 20:55:05,532 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 7.0ms pre-process, 290.3ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:55:05,969 - INFO - Starting send_notification
+2024-12-12 20:55:05,970 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:55:05,970 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:55:05,976 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:55:05,979 - INFO - Notification Response Status: 500
+2024-12-12 20:55:05,979 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:55:05,979 - ERROR - Failed to send notification: 500
+2024-12-12 20:55:29,222 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 9.0ms pre-process, 313.8ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:55:29,660 - INFO - Starting send_notification
+2024-12-12 20:55:29,661 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:55:29,662 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:55:29,669 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:55:29,671 - INFO - Notification Response Status: 500
+2024-12-12 20:55:29,671 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:55:29,672 - ERROR - Failed to send notification: 500
+2024-12-12 20:55:45,402 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 9.0ms pre-process, 304.6ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:55:45,924 - INFO - Starting send_notification
+2024-12-12 20:55:45,924 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:55:45,925 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:55:45,931 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:55:45,934 - INFO - Notification Response Status: 500
+2024-12-12 20:55:45,935 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:55:45,935 - ERROR - Failed to send notification: 500
+2024-12-12 20:56:22,710 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 11.0ms pre-process, 288.8ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:56:23,173 - INFO - Starting send_notification
+2024-12-12 20:56:23,173 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:56:23,173 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:56:23,180 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:56:23,182 - INFO - Notification Response Status: 500
+2024-12-12 20:56:23,183 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:56:23,183 - ERROR - Failed to send notification: 500
+2024-12-12 20:56:56,511 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 8.0ms pre-process, 299.9ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:56:56,946 - INFO - Starting send_notification
+2024-12-12 20:56:56,947 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:56:58,238 - ERROR - Error in send notification endpoint: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 307, in send_notification
+    pb.push_file(**file_data)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pushbullet\pushbullet.py", line 258, in push_file
+    return self._push(data)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pushbullet\pushbullet.py", line 282, in _push
+    raise PushError(r.text)
+pushbullet.errors.PushError: {"error":{"code":"invalid_param","type":"invalid_request","message":"The param 'file_url' has an invalid value.","param":"file_url","cat":">:3"},"error_code":"invalid_param"}
+
+2024-12-12 20:56:58,239 - INFO - Completed send_notification
+2024-12-12 20:56:58,241 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:56:58,243 - INFO - Notification Response Status: 500
+2024-12-12 20:56:58,243 - INFO - Notification Response Body: {"error":"{\"error\":{\"code\":\"invalid_param\",\"type\":\"invalid_request\",\"message\":\"The param 'file_url' has an invalid value.\",\"param\":\"file_url\",\"cat\":\">:3\"},\"error_code\":\"invalid_param\"}","traceback":"Traceback (most recent call last):\n  File \"D:\\Personal\\codes\\project capstone\\cloud\\backend\\main.py\", line 307, in send_notification\n    pb.push_file(**file_data)\n  File \"C:\\Users\\DELL\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pushbullet\\pushbullet.py\", line 258, in push_file\n    return self._push(data)\n           ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DELL\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pushbullet\\pushbullet.py\", line 282, in _push\n    raise PushError(r.text)\npushbullet.errors.PushError: {\"error\":{\"code\":\"invalid_param\",\"type\":\"invalid_request\",\"message\":\"The param 'file_url' has an invalid value.\",\"param\":\"file_url\",\"cat\":\">:3\"},\"error_code\":\"invalid_param\"}\n"}
+
+2024-12-12 20:56:58,243 - ERROR - Failed to send notification: 500
+2024-12-12 20:57:26,878 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 9.0ms pre-process, 390.8ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:57:27,383 - INFO - Starting send_notification
+2024-12-12 20:57:27,384 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:57:28,601 - ERROR - Error in send notification endpoint: Traceback (most recent call last):
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 307, in send_notification
+    pb.push_file(**file_data)
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pushbullet\pushbullet.py", line 258, in push_file
+    return self._push(data)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pushbullet\pushbullet.py", line 282, in _push
+    raise PushError(r.text)
+pushbullet.errors.PushError: {"error":{"code":"invalid_param","type":"invalid_request","message":"The param 'file_url' has an invalid value.","param":"file_url","cat":">:3"},"error_code":"invalid_param"}
+
+2024-12-12 20:57:28,601 - INFO - Completed send_notification
+2024-12-12 20:57:28,605 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:57:28,608 - INFO - Notification Response Status: 500
+2024-12-12 20:57:28,608 - INFO - Notification Response Body: {"error":"{\"error\":{\"code\":\"invalid_param\",\"type\":\"invalid_request\",\"message\":\"The param 'file_url' has an invalid value.\",\"param\":\"file_url\",\"cat\":\">:3\"},\"error_code\":\"invalid_param\"}","traceback":"Traceback (most recent call last):\n  File \"D:\\Personal\\codes\\project capstone\\cloud\\backend\\main.py\", line 307, in send_notification\n    pb.push_file(**file_data)\n  File \"C:\\Users\\DELL\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pushbullet\\pushbullet.py\", line 258, in push_file\n    return self._push(data)\n           ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\DELL\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pushbullet\\pushbullet.py\", line 282, in _push\n    raise PushError(r.text)\npushbullet.errors.PushError: {\"error\":{\"code\":\"invalid_param\",\"type\":\"invalid_request\",\"message\":\"The param 'file_url' has an invalid value.\",\"param\":\"file_url\",\"cat\":\">:3\"},\"error_code\":\"invalid_param\"}\n"}
+
+2024-12-12 20:57:28,608 - ERROR - Failed to send notification: 500
+2024-12-12 20:58:02,727 - INFO - Started the project
+2024-12-12 20:58:02,729 - INFO - Started preprocessing features
+2024-12-12 20:58:02,729 - INFO - Loading the model...
+2024-12-12 20:58:07,455 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 20:58:09,625 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 296.7ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 20:58:10,057 - INFO - Starting send_notification
+2024-12-12 20:58:10,057 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 20:58:10,057 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 20:58:10,065 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 20:58:10,068 - INFO - Notification Response Status: 500
+2024-12-12 20:58:10,068 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 20:58:10,068 - ERROR - Failed to send notification: 500
+2024-12-12 20:59:43,792 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 8.0ms pre-process, 292.1ms inference, 18.6ms NMS per image at shape (1, 3, 448, 640)
+2024-12-12 20:59:43,793 - INFO - Access granted
+2024-12-12 21:01:09,798 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 10.0ms pre-process, 322.1ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:01:10,242 - INFO - Starting send_notification
+2024-12-12 21:01:10,243 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 21:01:10,243 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 21:01:10,248 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 21:01:10,250 - INFO - Notification Response Status: 500
+2024-12-12 21:01:10,251 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 21:01:10,251 - ERROR - Failed to send notification: 500
+2024-12-12 21:03:20,920 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 10.0ms pre-process, 250.0ms inference, 1.0ms NMS per image at shape (1, 3, 448, 640)
+2024-12-12 21:03:20,921 - INFO - Access granted
+2024-12-12 21:04:47,621 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 11.0ms pre-process, 313.6ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:04:48,094 - INFO - Starting send_notification
+2024-12-12 21:04:48,094 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 21:04:48,094 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 21:04:48,100 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 21:04:48,103 - INFO - Notification Response Status: 500
+2024-12-12 21:04:48,103 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 21:04:48,104 - ERROR - Failed to send notification: 500
+2024-12-12 21:05:13,948 - INFO - Started the project
+2024-12-12 21:05:13,950 - INFO - Started preprocessing features
+2024-12-12 21:05:13,951 - INFO - Loading the model...
+2024-12-12 21:05:17,973 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 21:05:20,340 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 305.9ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:05:20,781 - INFO - Starting send_notification
+2024-12-12 21:05:20,782 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg')])
+2024-12-12 21:05:20,782 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\temp_image.jpg'
+2024-12-12 21:05:20,790 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 21:05:20,793 - INFO - Notification Response Status: 500
+2024-12-12 21:05:20,793 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 21:05:20,793 - ERROR - Failed to send notification: 500
+2024-12-12 21:06:46,829 - INFO - Started the project
+2024-12-12 21:06:46,831 - INFO - Started preprocessing features
+2024-12-12 21:06:46,832 - INFO - Loading the model...
+2024-12-12 21:06:51,062 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 21:06:53,558 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 333.0ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:06:53,990 - INFO - Starting send_notification
+2024-12-12 21:06:53,990 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\cloud\\\\backend\\\\temp_image.jpg')])
+2024-12-12 21:06:53,991 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\cloud\\\\backend\\\\temp_image.jpg'
+2024-12-12 21:06:53,998 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 21:06:54,002 - INFO - Notification Response Status: 500
+2024-12-12 21:06:54,003 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 21:06:54,003 - ERROR - Failed to send notification: 500
+2024-12-12 21:07:34,762 - INFO - Started the project
+2024-12-12 21:07:34,765 - INFO - Started preprocessing features
+2024-12-12 21:07:34,766 - INFO - Loading the model...
+2024-12-12 21:07:39,291 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 21:07:52,775 - INFO - Started the project
+2024-12-12 21:07:52,778 - INFO - Started preprocessing features
+2024-12-12 21:07:52,778 - INFO - Loading the model...
+2024-12-12 21:07:56,601 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 21:08:04,244 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 313.3ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:08:04,733 - INFO - Starting send_notification
+2024-12-12 21:08:04,734 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\Personal\\codes\\project capstone\\cloud\x08ackend\temp_image.jpg')])
+2024-12-12 21:08:04,734 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'D:\\Personal\\codes\\project capstone\\cloud\x08ackend\temp_image.jpg'
+2024-12-12 21:08:04,742 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 21:08:04,744 - INFO - Notification Response Status: 500
+2024-12-12 21:08:04,745 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 21:08:04,745 - ERROR - Failed to send notification: 500
+2024-12-12 21:09:41,631 - INFO - Started the project
+2024-12-12 21:09:41,634 - INFO - Started preprocessing features
+2024-12-12 21:09:41,635 - INFO - Loading the model...
+2024-12-12 21:09:45,378 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 21:09:47,442 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 5.0ms pre-process, 335.9ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:09:47,876 - INFO - Starting send_notification
+2024-12-12 21:09:47,877 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'D:\\\\Personal\\\\codes\\\\project capstone\\\\cloud\\\\backend\\\\temp_image.jpg')])
+2024-12-12 21:09:47,877 - ERROR - Exception on request POST /send_notification
+Traceback (most recent call last):
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1404, in handle_request
+    return await self.full_dispatch_request(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1442, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1030, in handle_user_exception
+    raise error
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1440, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\quart\app.py", line 1536, in dispatch_request
+    return await self.ensure_async(handler)(**request_.view_args)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\base_logger.py", line 32, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\codes\project capstone\cloud\backend\main.py", line 302, in send_notification
+    with open(file_path, "rb") as pic:
+         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\Personal\\\\codes\\\\project capstone\\\\cloud\\\\backend\\\\temp_image.jpg'
+2024-12-12 21:09:47,885 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 500 "
+2024-12-12 21:09:47,888 - INFO - Notification Response Status: 500
+2024-12-12 21:09:47,888 - INFO - Notification Response Body: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-12 21:09:47,888 - ERROR - Failed to send notification: 500
+2024-12-12 21:10:32,239 - INFO - Started the project
+2024-12-12 21:10:32,241 - INFO - Started preprocessing features
+2024-12-12 21:10:32,241 - INFO - Loading the model...
+2024-12-12 21:10:35,945 - INFO - Running on http://0.0.0.0:5000 (CTRL + C to quit)
+2024-12-12 21:10:43,840 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 7.0ms pre-process, 313.0ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:10:44,289 - INFO - Starting send_notification
+2024-12-12 21:10:44,289 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'temp_image.jpg')])
+2024-12-12 21:10:48,296 - INFO - Starting wait_for_response
+2024-12-12 21:11:06,526 - INFO - Completed wait_for_response
+2024-12-12 21:11:06,527 - INFO - Starting store_notifications
+2024-12-12 21:11:06,527 - INFO - Starting get_connection
+2024-12-12 21:11:30,560 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 8.0ms pre-process, 323.5ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:11:31,010 - INFO - Starting send_notification
+2024-12-12 21:11:31,010 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'temp_image.jpg')])
+2024-12-12 21:11:37,247 - INFO - Starting wait_for_response
+2024-12-12 21:11:55,473 - INFO - Completed wait_for_response
+2024-12-12 21:11:55,473 - INFO - Starting store_notifications
+2024-12-12 21:11:55,475 - INFO - Starting get_connection
+2024-12-12 21:11:55,479 - INFO - Completed get_connection
+2024-12-12 21:12:53,601 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 8.0ms pre-process, 272.5ms inference, 0.9ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:12:54,114 - INFO - Starting send_notification
+2024-12-12 21:12:54,114 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'temp_image.jpg')])
+2024-12-12 21:12:57,526 - INFO - Starting wait_for_response
+2024-12-12 21:13:15,755 - INFO - Received 'yes' response!
+2024-12-12 21:13:15,755 - INFO - Completed wait_for_response
+2024-12-12 21:13:15,755 - INFO - Starting store_notifications
+2024-12-12 21:13:15,755 - INFO - Starting get_connection
+2024-12-12 21:13:19,825 - INFO - Completed get_connection
+2024-12-12 21:13:19,838 - INFO - Completed store_notifications
+2024-12-12 21:13:19,838 - INFO - {'message': 'Notification sent successfully'}
+2024-12-12 21:13:19,838 - INFO - Granted by user
+2024-12-12 21:13:19,838 - INFO - Completed send_notification
+2024-12-12 21:13:19,846 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 200 "
+2024-12-12 21:13:19,849 - INFO - Notification Response Status: 200
+2024-12-12 21:13:19,849 - INFO - Notification Response Body: {"result":"granted"}
+
+2024-12-12 21:13:19,849 - INFO - Access granted by user
+2024-12-12 21:14:34,805 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 10.0ms pre-process, 350.8ms inference, 0.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:14:35,264 - INFO - Starting send_notification
+2024-12-12 21:14:35,267 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'temp_image.jpg')])
+2024-12-12 21:14:38,820 - INFO - Starting wait_for_response
+2024-12-12 21:14:57,043 - INFO - Received 'yes' response!
+2024-12-12 21:14:57,044 - INFO - Completed wait_for_response
+2024-12-12 21:14:57,044 - INFO - Starting store_notifications
+2024-12-12 21:14:57,044 - INFO - Starting get_connection
+2024-12-12 21:15:01,145 - INFO - Completed get_connection
+2024-12-12 21:15:01,162 - INFO - Completed store_notifications
+2024-12-12 21:15:01,162 - INFO - {'message': 'Notification sent successfully'}
+2024-12-12 21:15:01,162 - INFO - Granted by user
+2024-12-12 21:15:01,162 - INFO - Completed send_notification
+2024-12-12 21:15:01,168 - INFO - HTTP Request: POST http://192.168.137.214:5000/send_notification "HTTP/1.1 200 "
+2024-12-12 21:15:01,171 - INFO - Notification Response Status: 200
+2024-12-12 21:15:01,171 - INFO - Notification Response Body: {"result":"granted"}
+
+2024-12-12 21:15:01,171 - INFO - Access granted by user
+2024-12-12 21:16:02,332 - INFO - Detections: image 1/1: 1280x959 (no detections)
+Speed: 9.0ms pre-process, 286.5ms inference, 1.0ms NMS per image at shape (1, 3, 640, 480)
+2024-12-12 21:16:02,772 - INFO - Starting send_notification
+2024-12-12 21:16:02,772 - INFO - data reeceied in notify: ImmutableMultiDict([('title', 'Face Recognition Alert'), ('message', 'No face detected. Do you want to grant access?'), ('user_id', '123'), ('log_id', '456'), ('notification_type', 'access_request'), ('file', 'temp_image.jpg')])
+2024-12-12 21:16:06,056 - INFO - Starting wait_for_response
+2024-12-12 21:16:24,289 - INFO - Completed wait_for_response
+2024-12-12 21:16:24,290 - INFO - Starting store_notifications
+2024-12-12 21:16:24,290 - INFO - Starting get_connection
+2024-12-12 21:23:09,544 - INFO - Detections: image 1/1: 320x491 1 Robert Downey Junior, 1 Tom Cruise
+Speed: 10.0ms pre-process, 273.0ms inference, 1.0ms NMS per image at shape (1, 3, 448, 640)
+2024-12-12 21:23:09,545 - INFO - Access granted

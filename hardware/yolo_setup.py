@@ -4,7 +4,7 @@ import cv2
 from base_logger import log_function
 
 # Path to the pre-trained face recognition model
-model_path = r"hardware\\best.pt"  # Path to the .pt file containing the model
+model_path = "hardware\best.pt"  # Path to the .pt file containing the model
 device = "cpu"  # Device to load the model on ('cpu' or 'cuda' for GPU)
 global model, transform  # Declare global variables for the model and transformation pipeline
 

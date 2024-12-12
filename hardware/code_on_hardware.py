@@ -3,7 +3,7 @@ import logging
 import shelve
 import numpy as np
 import httpx
-from picamera import PiCamera
+#from picamera import PiCamera
 import RPi.GPIO as GPIO
 from torchvision import transforms
 from logging.handlers import RotatingFileHandler
@@ -56,7 +56,7 @@ GPIO.setup(SHUT_DOWN_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)  # Shutdown butto
 GPIO.setup(RESET_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)      # Reset button with pull-down resistor
 
 # Initialize the camera
-camera = PiCamera()
+#camera = PiCamera()
 
 logging.info("Pushbullet, GPIO setup, picamera done")
 logging.info("Starting to load the ML model")
@@ -64,7 +64,7 @@ logging.info("Starting to load the ML model")
 # Load the YOLO model for face detection
 yolo_setup.load_model()
 
-camera.resolution = (640, 480)  
+#camera.resolution = (640, 480)  
 
 logging.info('Finished loading the model')
 
@@ -101,15 +101,15 @@ async def request_image_from_pc(pc_url):
         return None
 
 # Function to capture an image and extract the face
-@log_function
-async def capture_image():
-    """Captures an image using the PiCamera and extracts the face."""
-    # Generate a timestamp for the image file name
-    t_stamp = f'{datetime.date.today()}_{datetime.datetime.now().strftime("%H-%M-%S")}'
-    image_path = f"{IMAGE_DIR}/captured_image_{t_stamp}.jpg"
-    camera.capture(image_path)                                  # Capture the image
-    face_image = yolo_setup.capture_face(image_path)            # Extract the face region
-    return face_image
+# @log_function
+# async def capture_image():
+#     """Captures an image using the PiCamera and extracts the face."""
+#     # Generate a timestamp for the image file name
+#     t_stamp = f'{datetime.date.today()}_{datetime.datetime.now().strftime("%H-%M-%S")}'
+#     image_path = f"{IMAGE_DIR}/captured_image_{t_stamp}.jpg"
+#     camera.capture(image_path)                                  # Capture the image
+#     face_image = yolo_setup.capture_face(image_path)            # Extract the face region
+#     return face_image
 
 # Function to check the cache for previous authentication results
 @log_function

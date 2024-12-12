@@ -4,7 +4,7 @@ import cv2
 from base_logger import log_function
 
 # Path to the pre-trained face recognition model
-model_path = "best.pt"  # Path to the .pt file containing the model
+model_path = r"hardware\\best.pt"  # Path to the .pt file containing the model
 device = "cpu"  # Device to load the model on ('cpu' or 'cuda' for GPU)
 global model, transform  # Declare global variables for the model and transformation pipeline
 
@@ -15,7 +15,7 @@ async def load_model():
     """
     global model, transform
     # Load the PyTorch model from the specified path and map it to the chosen device
-    model = torch.load(model_path, map_location=device)
+    model = torch.load(model_path, map_location=device,weights_only=True)
     model.eval()  # Set the model to evaluation mode (disables training-specific layers like dropout)
     
     # Define the transformation pipeline to preprocess the input image

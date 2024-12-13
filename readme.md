@@ -36,6 +36,5 @@ Usage:
                 python3 code_on_hardware.py
                 
         2. API Endpoint for Cloud Integration
-        Ensure the cloud server is running. Update the pc_url and cloud_ai_url in the code with the server's IP and port.
         Run the code that is for cloud:
                 python3 main.py
